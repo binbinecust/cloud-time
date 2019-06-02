@@ -1,8 +1,19 @@
 <template>
   <div>
-    <nuxt />
+    <main>
+      <Navigation></Navigation>
+      <nuxt />
+    </main>
   </div>
 </template>
+<script>
+import Navigation from '@/components/navigation'
+export default {
+  components: {
+    Navigation
+  }
+}
+</script>
 
 <style>
 html {
@@ -15,9 +26,13 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  text-align: center;
+}
+body {
+  margin-top: 20px;
 }
 
-*,
+/* *,
 *:before,
 *:after {
   box-sizing: border-box;
@@ -51,5 +66,5 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
-}
+} */
 </style>
