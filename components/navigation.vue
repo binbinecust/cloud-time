@@ -55,10 +55,10 @@
         <Icon type="ios-albums" />
         我的作品
         </MenuItem>
-        <MenuItem name="7">
+        <!-- <MenuItem name="7">
         <Icon type="ios-baseball" />
         试听课预约
-        </MenuItem>
+        </MenuItem> -->
         <MenuItem name="8">
         <Icon type="ios-beer" />
         联系我们

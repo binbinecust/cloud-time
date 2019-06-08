@@ -7,13 +7,34 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: pkg.name,
+    title: '云时光艺术空间',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      {
+        name: 'viewport',
+        content:
+          'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0'
+      },
+      { hid: 'description', name: 'description', content: pkg.description },
+      {
+        name: 'keywords',
+        content: '云时光,艺术,少儿美术,美术,孟汐,卢婉婷,方彬彬,周晓林'
+      },
+      {
+        name: 'author',
+        content: '方彬彬,binbinecust@163.com'
+      }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      {
+        src:
+          'http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js',
+        type: 'text/javascript',
+        charset: 'utf-8'
+      }
+    ],
+    __dangerouslyDisableSanitizers: ['script']
   },
 
   /*
@@ -24,7 +45,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['iview/dist/styles/iview.css'],
+  css: ['iview/dist/styles/iview.css', './assets/theme/index.less'],
 
   /*
    ** Plugins to load before mounting the App
@@ -63,6 +84,11 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    postcss: [
+      require('postcss-px2rem')({
+        remUnit: 75
+      })
+    ]
   }
 }
