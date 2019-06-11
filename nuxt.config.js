@@ -25,11 +25,13 @@ module.exports = {
         content: '方彬彬,binbinecust@163.com'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { href: '/flexible.css', type: 'text/css', rel: 'stylesheet' }
+    ],
     script: [
       {
-        src:
-          'http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js',
+        src: '/flexible.js',
         type: 'text/javascript',
         charset: 'utf-8'
       }
