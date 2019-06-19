@@ -2,7 +2,7 @@
   <div>
     <div class="logo">
       <img
-        src="@/static/6.jpg"
+        src="../assets/footer/6.jpg"
         alt="云时光艺术空间"
       >
       <span>云时光艺术空间</span>

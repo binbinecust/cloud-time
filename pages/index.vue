@@ -10,7 +10,7 @@
       <CarouselItem class="item">
         <div>
           <img
-            src="@/static/slider/a.jpg"
+            src="../assets/slider/a.jpg"
             alt=""
           >
         </div>
@@ -18,7 +18,7 @@
       <CarouselItem class="item">
         <div>
           <img
-            src="@/static/slider/b.jpg"
+            src="../assets/slider/b.jpg"
             alt=""
           >
         </div>
@@ -26,7 +26,7 @@
       <CarouselItem class="item">
         <div>
           <img
-            src="@/static/slider/c.jpg"
+            src="../assets/slider/c.jpg"
             alt=""
           >
         </div>
@@ -34,7 +34,7 @@
       <CarouselItem class="item">
         <div>
           <img
-            src="@/static/slider/d.jpg"
+            src="../assets/slider/d.jpg"
             alt=""
           >
         </div>
@@ -42,7 +42,7 @@
       <CarouselItem class="item">
         <div>
           <img
-            src="@/static/slider/e.jpg"
+            src="../assets/slider/e.jpg"
             alt=""
           >
         </div>
@@ -70,7 +70,7 @@
           <div class="left">
             <div class="logo">
               <img
-                src="@/static/6.jpg"
+                src="../assets/footer/6.jpg"
                 alt=""
               >
               <span>云时光艺术空间</span>
@@ -85,13 +85,13 @@
           </div>
           <div class="right">
             <img
-              src="../static/index/wechat.svg"
+              src="../assets/footer/wechat.svg"
               alt=""
             >
             <p>欢迎关注</p>
             <p>云时光艺术空间 公众号</p>
             <img
-              src="../static/index/binbin.jpeg"
+              src="../assets/footer/binbin.jpeg"
               alt="云时光艺术空间"
             >
           </div>
@@ -109,22 +109,22 @@ export default {
       index: 0,
       activitys: [
         {
-          img: require('@/static/activitys/a.jpg'),
+          img: require('@/assets/activitys/a.jpg'),
           txt: '面包屑1',
           des: '我是孟大宝'
         },
         {
-          img: require('@/static/activitys/b.jpg'),
+          img: require('@/assets/activitys/b.jpg'),
           txt: '面包屑2',
           des: '我是彬大宝'
         },
         {
-          img: require('@/static/activitys/c.jpg'),
+          img: require('@/assets/activitys/c.jpg'),
           txt: '面包屑3',
           des: '我还是孟大宝'
         },
         {
-          img: require('@/static/activitys/d.jpg'),
+          img: require('@/assets/activitys/d.jpg'),
           txt: '面包屑4',
           des: '我还是彬大宝'
         }
