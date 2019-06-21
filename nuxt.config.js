@@ -27,7 +27,13 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { href: '/flexible.css', type: 'text/css', rel: 'stylesheet' }
+      { href: '/flexible.css', type: 'text/css', rel: 'stylesheet' },
+      {
+        href:
+          'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css',
+        type: 'text/css',
+        rel: 'stylesheet'
+      }
     ],
     script: [
       {
@@ -60,7 +66,8 @@ module.exports = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    'nuxt-imagemin'
   ],
   /*
    ** Axios module configuration
@@ -83,7 +90,10 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
+          options: {
+            fix: true
+          }
         })
       }
     },

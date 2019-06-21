@@ -1,21 +1,14 @@
 <template>
   <div>
     <div class="logo">
-      <img
-        src="../assets/footer/6.jpg"
-        alt="云时光艺术空间"
-      >
+      <img src="../assets/footer/6.jpg" alt="云时光艺术空间" />
       <span>云时光艺术空间</span>
     </div>
     <div class="menu">
-      <Menu
-        mode="horizontal"
-        theme="light"
-        active-name="1"
-      >
+      <Menu mode="horizontal" theme="light" active-name="1">
         <MenuItem name="1">
-        <Icon type="ios-paper" />
-        首页
+          <Icon type="ios-paper" />
+          首页
         </MenuItem>
         <Submenu name="2">
           <template slot="title">
@@ -52,25 +45,22 @@
           <MenuItem name="5-3">家长艺术沙龙</MenuItem>
         </Submenu>
         <MenuItem name="6">
-        <Icon type="ios-albums" />
-        我的作品
+          <Icon type="ios-albums" />
+          我的作品
         </MenuItem>
         <!-- <MenuItem name="7">
         <Icon type="ios-baseball" />
         试听课预约
         </MenuItem> -->
         <MenuItem name="8">
-        <Icon type="ios-beer" />
-        联系我们
+          <Icon type="ios-beer" />
+          联系我们
         </MenuItem>
       </Menu>
     </div>
     <div class="call">
       <a href="tel:13127752060">
-        <Icon
-          type="ios-call"
-          size="50"
-        />
+        <Icon type="ios-call" size="50" />
         13127752060
       </a>
     </div>

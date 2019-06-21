@@ -1,112 +1,102 @@
 <template>
   <div>
-    <Carousel
-      class="carousel"
-      v-model="index"
-      :autoplay-speed="4000"
-      autoplay
-      loop
-    >
-      <CarouselItem class="item">
-        <div>
-          <img
-            src="../assets/slider/a.jpg"
-            alt=""
+    <div v-if="!isShow">
+      <Carousel
+        v-model="index"
+        class="carousel"
+        :autoplay-speed="4000"
+        autoplay
+        loop
+      >
+        <CarouselItem class="item">
+          <div>
+            <img src="../assets/slider/a.jpg" alt="" />
+          </div>
+        </CarouselItem>
+        <CarouselItem class="item">
+          <div>
+            <img src="../assets/slider/b.jpg" alt="" />
+          </div>
+        </CarouselItem>
+        <CarouselItem class="item">
+          <div>
+            <img src="../assets/slider/c.jpg" alt="" />
+          </div>
+        </CarouselItem>
+        <CarouselItem class="item">
+          <div>
+            <img src="../assets/slider/d.jpg" alt="" />
+          </div>
+        </CarouselItem>
+        <CarouselItem class="item">
+          <div>
+            <img src="../assets/slider/e.jpg" alt="" />
+          </div>
+        </CarouselItem>
+      </Carousel>
+      <div class="content">
+        <div class="activitys">
+          <div
+            v-for="activity in activitys"
+            :key="activity.img"
+            class="activity"
           >
-        </div>
-      </CarouselItem>
-      <CarouselItem class="item">
-        <div>
-          <img
-            src="../assets/slider/b.jpg"
-            alt=""
-          >
-        </div>
-      </CarouselItem>
-      <CarouselItem class="item">
-        <div>
-          <img
-            src="../assets/slider/c.jpg"
-            alt=""
-          >
-        </div>
-      </CarouselItem>
-      <CarouselItem class="item">
-        <div>
-          <img
-            src="../assets/slider/d.jpg"
-            alt=""
-          >
-        </div>
-      </CarouselItem>
-      <CarouselItem class="item">
-        <div>
-          <img
-            src="../assets/slider/e.jpg"
-            alt=""
-          >
-        </div>
-      </CarouselItem>
-    </Carousel>
-    <div class="content">
-      <div class="activitys">
-        <div
-          v-for="activity in activitys"
-          :key="activity.img"
-          class="activity"
-        >
-          <img
-            :src="activity.img"
-            alt=""
-          >
-          <div>{{activity.txt}}</div>
-          <div>{{activity.des}}</div>
+            <img :src="activity.img" alt="" />
+            <div>{{ activity.txt }}</div>
+            <div>{{ activity.des }}</div>
+          </div>
         </div>
       </div>
-    </div>
-    <footer>
-      <div class="contact">
-        <div class="contact-body">
-          <div class="left">
-            <div class="logo">
-              <img
-                src="../assets/footer/6.jpg"
-                alt=""
-              >
-              <span>云时光艺术空间</span>
+      <footer>
+        <div class="contact">
+          <div class="contact-body">
+            <div class="left">
+              <div class="logo">
+                <img src="../assets/footer/6.jpg" alt="" />
+                <span>云时光艺术空间</span>
+              </div>
+              <div>联系电话：<a href="tel:+13127752060">13127752060</a></div>
+              <div>
+                邮箱：<a href="mailto:cloudtimes2019163.com"
+                  >cloudtimes2019163.com</a
+                >
+              </div>
+              <div>
+                地址：<a
+                  href="//www.amap.com/place/B000A81I1W"
+                  rel="noopener norefferrer"
+                  target="_blank"
+                  >北京市水木天成底商</a
+                >
+              </div>
             </div>
-            <div>联系电话：<a href="tel:+13127752060">13127752060</a></div>
-            <div>邮箱：<a href="mailto:cloudtimes2019163.com">cloudtimes2019163.com</a></div>
-            <div>地址：<a
-                href="//www.amap.com/place/B000A81I1W"
-                rel="noopener norefferrer"
-                target="_blank"
-              >北京市水木天成底商</a></div>
+            <div class="right">
+              <img src="../assets/footer/wechat.svg" alt="" />
+              <p>欢迎关注</p>
+              <p>云时光艺术空间 公众号</p>
+              <img src="../assets/footer/binbin.jpeg" alt="云时光艺术空间" />
+            </div>
           </div>
-          <div class="right">
-            <img
-              src="../assets/footer/wechat.svg"
-              alt=""
-            >
-            <p>欢迎关注</p>
-            <p>云时光艺术空间 公众号</p>
-            <img
-              src="../assets/footer/binbin.jpeg"
-              alt="云时光艺术空间"
-            >
+          <div class="copyright">
+            Copyright © 2019-{{ year }} 云时光艺术空间 | 京ICP备19016270号-2
           </div>
         </div>
-        <div class="copyright">Copyright © 2019-{{year}} 云时光艺术空间 | 京ICP备19016270号-2</div>
-      </div>
-    </footer>
+      </footer>
+    </div>
+    <pre-index v-if="isShow" @hide="hidePreIndex"></pre-index>
   </div>
 </template>
 <script>
+import PreIndex from '@/components/pre-index.vue'
 export default {
+  components: {
+    PreIndex
+  },
   data() {
     return {
       year: new Date().getFullYear(),
       index: 0,
+      isShow: true,
       activitys: [
         {
           img: require('@/assets/activitys/a.jpg'),
@@ -129,6 +119,11 @@ export default {
           des: '我还是彬大宝'
         }
       ]
+    }
+  },
+  methods: {
+    hidePreIndex() {
+      this.isShow = false
     }
   }
 }
