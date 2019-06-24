@@ -27,7 +27,6 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { href: '/flexible.css', type: 'text/css', rel: 'stylesheet' },
       {
         href:
           'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css',
@@ -37,7 +36,7 @@ module.exports = {
     ],
     script: [
       {
-        src: '/flexible.js',
+        src: 'https://cdn.jsdelivr.net/npm/lib-flexible@0.3.2/flexible.min.js',
         type: 'text/javascript',
         charset: 'utf-8'
       }
@@ -48,7 +47,7 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: 'red' },
 
   /*
    ** Global CSS
@@ -86,21 +85,30 @@ module.exports = {
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/,
-          options: {
-            fix: true
+        config.module.rules.push(
+          {
+            enforce: 'pre',
+            test: /\.(js|vue)$/,
+            loader: 'eslint-loader',
+            exclude: /(node_modules)/,
+            options: {
+              fix: true
+            }
+          },
+          {
+            test: /\.ico$/,
+            loader: 'uri-loader',
+            exclude: /(node_modules)/
           }
-        })
+        )
       }
     },
-    postcss: [
-      require('postcss-px2rem')({
-        remUnit: 75
-      })
-    ]
+    postcss: {
+      plugins: {
+        'postcss-px2rem': {
+          remUnit: 75
+        }
+      }
+    }
   }
 }

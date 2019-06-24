@@ -23,13 +23,12 @@
 import Vue from 'vue'
 import * as mChange from 'matrixchange'
 import { aniList } from '@/config'
-import { IsPC } from '@/utils'
 export default Vue.extend({
   data() {
     return {
       animation: null,
       isShow: false,
-      isPC: IsPC()
+      isPC: this.$store.state.isPC
     }
   },
   mounted() {
@@ -62,7 +61,6 @@ export default Vue.extend({
       })
     },
     changeAnimation() {
-      console.log('changeAnimation')
       const randomMode = Math.floor(mChange.mode.length * Math.random())
       const randomIn = Math.floor(aniList.length * Math.random())
       const randomOut = Math.floor(aniList.length * Math.random())

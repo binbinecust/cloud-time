@@ -37,8 +37,8 @@
       <div class="content">
         <div class="activitys">
           <div
-            v-for="activity in activitys"
-            :key="activity.img"
+            v-for="(activity, actIndex) in activitys"
+            :key="actIndex"
             class="activity"
           >
             <img :src="activity.img" alt="" />
@@ -57,8 +57,8 @@
               </div>
               <div>联系电话：<a href="tel:+13127752060">13127752060</a></div>
               <div>
-                邮箱：<a href="mailto:cloudtimes2019163.com"
-                  >cloudtimes2019163.com</a
+                邮箱：<a href="mailto:cloudtimes2019@163.com"
+                  >cloudtimes2019@163.com</a
                 >
               </div>
               <div>
@@ -66,15 +66,13 @@
                   href="//www.amap.com/place/B000A81I1W"
                   rel="noopener norefferrer"
                   target="_blank"
-                  >北京市水木天成底商</a
+                  >北京市海淀区清河街道水木天成小区底商</a
                 >
               </div>
             </div>
             <div class="right">
-              <img src="../assets/footer/wechat.svg" alt="" />
-              <p>欢迎关注</p>
-              <p>云时光艺术空间 公众号</p>
               <img src="../assets/footer/binbin.jpeg" alt="云时光艺术空间" />
+              <p>关注我们</p>
             </div>
           </div>
           <div class="copyright">
@@ -104,19 +102,19 @@ export default {
           des: '我是孟大宝'
         },
         {
-          img: require('@/assets/activitys/b.jpg'),
+          img: require('@/assets/activitys/a.jpg'),
           txt: '面包屑2',
           des: '我是彬大宝'
         },
         {
-          img: require('@/assets/activitys/c.jpg'),
+          img: require('@/assets/activitys/a.jpg'),
           txt: '面包屑3',
-          des: '我还是孟大宝'
+          des: '我是孟大宝'
         },
         {
-          img: require('@/assets/activitys/d.jpg'),
+          img: require('@/assets/activitys/a.jpg'),
           txt: '面包屑4',
-          des: '我还是彬大宝'
+          des: '我是彬大宝'
         }
       ]
     }
@@ -141,14 +139,20 @@ export default {
   margin: 0 auto;
 }
 .activitys {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 50px 0;
   .activity {
-    width: 200px;
+    flex: 1;
     text-align: center;
     display: inline-block;
     margin-right: 50px;
     img {
       height: 90px;
+    }
+    &:last-child {
+      margin-right: 0;
     }
   }
   &::after {
@@ -178,17 +182,18 @@ export default {
         width: 100px;
         height: 100px;
         margin-right: 20px;
+        margin-bottom: 10px;
       }
     }
     .right {
       text-align: right;
-      img:nth-of-type(1) {
-        width: 41px;
-        height: 34px;
+      img {
+        width: 100px;
+        height: 120px;
       }
-      img:nth-of-type(2) {
-        width: 80px;
-        height: 80px;
+      p {
+        width: 100%;
+        text-align: center;
       }
       * {
         margin-bottom: 5px;

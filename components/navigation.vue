@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="!isPC ? 'mobile' : ''">
     <div class="logo">
       <img src="../assets/footer/6.jpg" alt="云时光艺术空间" />
       <span>云时光艺术空间</span>
@@ -19,15 +19,7 @@
           <MenuItem name="2-1">核心优势</MenuItem>
           <MenuItem name="2-1">致家长信</MenuItem>
         </Submenu>
-        <Submenu name="3">
-          <template slot="title">
-            <Icon type="ios-stats" />
-            云时光动态
-          </template>
-          <MenuItem name="3-1">近期动态</MenuItem>
-          <MenuItem name="3-2">大事记</MenuItem>
-        </Submenu>
-        <Submenu name="4">
+        <Submenu v-if="isPC" name="4">
           <template slot="title">
             <Icon type="ios-construct" />
             课程简介
@@ -35,7 +27,7 @@
           <MenuItem name="4-1">课程解析</MenuItem>
           <MenuItem name="4-2">阶段学习</MenuItem>
         </Submenu>
-        <Submenu name="5">
+        <Submenu v-if="isPC" name="5">
           <template slot="title">
             <Icon type="ios-construct" />
             主题活动
@@ -60,7 +52,7 @@
     </div>
     <div class="call">
       <a href="tel:13127752060">
-        <Icon type="ios-call" size="50" />
+        <Icon type="ios-call" :size="isPC ? 50 : 20" />
         13127752060
       </a>
     </div>
@@ -69,11 +61,28 @@
 <script>
 export default {
   data() {
-    return {}
+    return {
+      isPC: this.$store.state.isPC
+    }
   }
 }
 </script>
 <style scoped lang="scss">
+.mobile {
+  .logo {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+  }
+  .call {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+  }
+  .menu {
+    margin-top: 100px;
+  }
+}
 .logo {
   display: inline-block;
   img {
