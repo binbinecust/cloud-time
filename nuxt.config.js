@@ -28,8 +28,7 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
-        href:
-          'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css',
+        href: 'https://unpkg.com/animate.css@3.5.2/animate.min.css',
         type: 'text/css',
         rel: 'stylesheet'
       }
@@ -38,7 +37,8 @@ module.exports = {
       {
         src: 'https://cdn.jsdelivr.net/npm/lib-flexible@0.3.2/flexible.min.js',
         type: 'text/javascript',
-        charset: 'utf-8'
+        charset: 'utf-8',
+        defer: 'defer'
       }
     ],
     __dangerouslyDisableSanitizers: ['script']

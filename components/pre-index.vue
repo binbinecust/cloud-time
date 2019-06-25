@@ -75,6 +75,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .pre-index {
+  cursor: auto;
   z-index: 9999;
   position: absolute;
   left: 0;
