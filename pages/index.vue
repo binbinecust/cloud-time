@@ -10,27 +10,27 @@
       >
         <CarouselItem class="item">
           <div>
-            <img src="../assets/slider/a.jpg" alt="" />
+            <img src="@/assets/slider/a.jpg" alt="" />
           </div>
         </CarouselItem>
         <CarouselItem class="item">
           <div>
-            <img src="../assets/slider/b.jpg" alt="" />
+            <img src="@/assets/slider/b.jpg" alt="" />
           </div>
         </CarouselItem>
         <CarouselItem class="item">
           <div>
-            <img src="../assets/slider/c.jpg" alt="" />
+            <img src="@/assets/slider/c.jpg" alt="" />
           </div>
         </CarouselItem>
         <CarouselItem class="item">
           <div>
-            <img src="../assets/slider/d.jpg" alt="" />
+            <img src="@/assets/slider/d.jpg" alt="" />
           </div>
         </CarouselItem>
         <CarouselItem class="item">
           <div>
-            <img src="../assets/slider/e.jpg" alt="" />
+            <img src="@/assets/slider/e.jpg" alt="" />
           </div>
         </CarouselItem>
       </Carousel>
@@ -47,39 +47,6 @@
           </div>
         </div>
       </div>
-      <footer>
-        <div class="contact">
-          <div class="contact-body">
-            <div class="left">
-              <div class="logo">
-                <img src="../assets/footer/6.jpg" alt="" />
-                <span>云时光艺术空间</span>
-              </div>
-              <div>联系电话：<a href="tel:+13127752060">13127752060</a></div>
-              <div>
-                邮箱：<a href="mailto:cloudtimes2019@163.com"
-                  >cloudtimes2019@163.com</a
-                >
-              </div>
-              <div>
-                地址：<a
-                  href="//www.amap.com/place/B000A81I1W"
-                  rel="noopener norefferrer"
-                  target="_blank"
-                  >北京市海淀区清河街道水木天成小区底商</a
-                >
-              </div>
-            </div>
-            <div class="right">
-              <img src="../assets/footer/binbin.jpeg" alt="云时光艺术空间" />
-              <p>关注我们</p>
-            </div>
-          </div>
-          <div class="copyright">
-            Copyright © 2019-{{ year }} 云时光艺术空间 | 京ICP备19016270号-2
-          </div>
-        </div>
-      </footer>
     </div>
     <pre-index v-if="isShow" @hide="hidePreIndex"></pre-index>
   </div>
@@ -118,6 +85,9 @@ export default {
         }
       ]
     }
+  },
+  mounted() {
+    this.isShow = !this.$route.query.showPre
   },
   methods: {
     hidePreIndex() {
@@ -160,45 +130,6 @@ export default {
     content: '';
     display: block;
     border-bottom: 1px solid #ccc;
-  }
-}
-.contact {
-  color: white;
-  background: #222529;
-  padding: 50px;
-  .contact-body {
-    display: flex;
-    justify-content: space-between;
-    .left {
-      text-align: left;
-      > * {
-        margin-bottom: 5px;
-      }
-      .logo {
-        display: flex;
-        align-items: center;
-      }
-      img {
-        width: 100px;
-        height: 100px;
-        margin-right: 20px;
-        margin-bottom: 10px;
-      }
-    }
-    .right {
-      text-align: right;
-      img {
-        width: 100px;
-        height: 120px;
-      }
-      p {
-        width: 100%;
-        text-align: center;
-      }
-      * {
-        margin-bottom: 5px;
-      }
-    }
   }
 }
 </style>

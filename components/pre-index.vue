@@ -6,7 +6,7 @@
       type="success"
       class="enter-btn"
       @click.stop="$emit('hide')"
-      >云时光艺术空间</Button
+      >云时光艺术工作室</Button
     >
     <div v-if="!isShow" class="text">
       <span>云</span>

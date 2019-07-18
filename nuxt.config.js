@@ -7,7 +7,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: '云时光艺术空间',
+    title: '云时光艺术工作室',
     meta: [
       { charset: 'utf-8' },
       {
@@ -101,6 +101,8 @@ module.exports = {
             exclude: /(node_modules)/
           }
         )
+        console.log(config.output.publicPath, 'config.output.publicPath')
+        // config.output.publicPath = ''
       }
     },
     postcss: {
