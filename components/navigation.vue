@@ -1,50 +1,49 @@
 <template>
   <div :class="!isPC ? 'mobile' : ''">
     <div class="logo">
-      <img src="../assets/footer/6.jpg" alt="云时光艺术空间" />
-      <span>云时光艺术空间</span>
+      <img src="../assets/footer/6.jpg" alt="云时光艺术工作室" />
+      <span>云时光艺术工作室</span>
     </div>
     <div class="menu">
       <Menu mode="horizontal" theme="light" active-name="1">
-        <MenuItem name="1">
+        <MenuItem name="1" to="/?showPre=0">
           <Icon type="ios-paper" />
           首页
         </MenuItem>
-        <Submenu name="2">
+        <MenuItem name="2" to="/interpretation">
+          <Icon type="ios-people" />
+          解读云时光
+        </MenuItem>
+        <!-- <Submenu name="2">
           <template slot="title">
             <Icon type="ios-people" />
             解读云时光
           </template>
-          <MenuItem name="2-1">企业简介</MenuItem>
+          <MenuItem name="2-1" to="company-profiles">企业简介</MenuItem>
           <MenuItem name="2-1">核心优势</MenuItem>
           <MenuItem name="2-1">致家长信</MenuItem>
-        </Submenu>
+        </Submenu> -->
         <Submenu v-if="isPC" name="4">
           <template slot="title">
             <Icon type="ios-construct" />
             课程简介
           </template>
-          <MenuItem name="4-1">课程解析</MenuItem>
-          <MenuItem name="4-2">阶段学习</MenuItem>
+          <MenuItem name="4-1" to="/course/analysis">课程解析</MenuItem>
+          <MenuItem name="4-2" to="/course/stage-learning">阶段学习</MenuItem>
         </Submenu>
-        <Submenu v-if="isPC" name="5">
-          <template slot="title">
-            <Icon type="ios-construct" />
-            主题活动
-          </template>
-          <MenuItem name="5-1">活动通知</MenuItem>
-          <MenuItem name="5-2">亲子活动</MenuItem>
-          <MenuItem name="5-3">家长艺术沙龙</MenuItem>
-        </Submenu>
-        <MenuItem name="6">
-          <Icon type="ios-albums" />
-          我的作品
+        <MenuItem name="5" to="/theme-activity">
+          <Icon type="ios-construct" />
+          主题活动
         </MenuItem>
-        <!-- <MenuItem name="7">
-        <Icon type="ios-baseball" />
-        试听课预约
-        </MenuItem> -->
-        <MenuItem name="8">
+        <MenuItem name="6" to="/works">
+          <Icon type="ios-albums" />
+          学生作品
+        </MenuItem>
+        <MenuItem name="7" to="/teacher-introduction">
+          <Icon type="ios-beer" />
+          老师简介
+        </MenuItem>
+        <MenuItem name="8" to="/contact-us">
           <Icon type="ios-beer" />
           联系我们
         </MenuItem>

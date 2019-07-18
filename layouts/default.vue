@@ -1,21 +1,25 @@
 <template>
   <div>
     <main>
-      <Navigation></Navigation>
+      <navigation></navigation>
       <nuxt />
+      <footer-com></footer-com>
     </main>
   </div>
 </template>
 <script>
-import Navigation from '@/components/navigation'
+import navigation from '@/components/navigation'
+import footerCom from '@/components/footer.vue'
 export default {
   components: {
-    Navigation
+    navigation,
+    footerCom
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '@/assets/style/global.scss';
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
