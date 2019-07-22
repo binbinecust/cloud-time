@@ -1,5 +1,20 @@
 <template>
-  <div>阶段学习</div>
+  <div class="stage-learning main">
+    <div class="item module-wrapper">
+      <div class="title">
+        <Icon type="ios-leaf" />
+        <h2>少儿美术</h2>
+      </div>
+      <p>少儿美术教学内容</p>
+    </div>
+    <div class="item module-wrapper">
+      <div class="title">
+        <Icon type="ios-leaf" />
+        <h2>成人美术</h2>
+      </div>
+      <p>成人美术教学内容</p>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -19,4 +34,7 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.stage-learning {
+}
+</style>

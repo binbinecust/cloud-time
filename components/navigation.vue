@@ -5,45 +5,40 @@
       <span>云时光艺术工作室</span>
     </div>
     <div class="menu">
-      <Menu mode="horizontal" theme="light" active-name="1">
-        <MenuItem name="1" to="/?showPre=0">
+      <Menu mode="horizontal" theme="light" :active-name="activeName">
+        <MenuItem name="/" to="/?showPre=0">
           <Icon type="ios-paper" />
           首页
         </MenuItem>
-        <MenuItem name="2" to="/interpretation">
+        <MenuItem name="/interpretation" to="/interpretation">
           <Icon type="ios-people" />
           解读云时光
         </MenuItem>
-        <!-- <Submenu name="2">
-          <template slot="title">
-            <Icon type="ios-people" />
-            解读云时光
-          </template>
-          <MenuItem name="2-1" to="company-profiles">企业简介</MenuItem>
-          <MenuItem name="2-1">核心优势</MenuItem>
-          <MenuItem name="2-1">致家长信</MenuItem>
-        </Submenu> -->
-        <Submenu v-if="isPC" name="4">
+        <Submenu v-if="isPC" name="/course/analysis">
           <template slot="title">
             <Icon type="ios-construct" />
             课程简介
           </template>
-          <MenuItem name="4-1" to="/course/analysis">课程解析</MenuItem>
-          <MenuItem name="4-2" to="/course/stage-learning">阶段学习</MenuItem>
+          <MenuItem name="/course/analysis" to="/course/analysis"
+            >课程解析</MenuItem
+          >
+          <MenuItem name="/course/stage-learning" to="/course/stage-learning"
+            >阶段学习</MenuItem
+          >
         </Submenu>
-        <MenuItem name="5" to="/theme-activity">
+        <MenuItem name="/theme-activity" to="/theme-activity">
           <Icon type="ios-construct" />
           主题活动
         </MenuItem>
-        <MenuItem name="6" to="/works">
+        <MenuItem name="/works" to="/works">
           <Icon type="ios-albums" />
           学生作品
         </MenuItem>
-        <MenuItem name="7" to="/teacher-introduction">
+        <MenuItem name="/teacher-introduction" to="/teacher-introduction">
           <Icon type="ios-beer" />
           老师简介
         </MenuItem>
-        <MenuItem name="8" to="/contact-us">
+        <MenuItem name="/contact-us" to="/contact-us">
           <Icon type="ios-beer" />
           联系我们
         </MenuItem>
@@ -61,8 +56,12 @@
 export default {
   data() {
     return {
-      isPC: this.$store.state.isPC
+      isPC: this.$store.state.isPC,
+      activeName: '/'
     }
+  },
+  mounted() {
+    this.activeName = this.$route.path
   }
 }
 </script>

@@ -1,5 +1,7 @@
 <template>
-  <div>主题活动</div>
+  <div class="theme-activity main">
+    主题活动
+  </div>
 </template>
 
 <script>
@@ -19,4 +21,7 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.theme-activity {
+}
+</style>

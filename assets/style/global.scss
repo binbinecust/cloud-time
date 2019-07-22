@@ -1,8 +1,26 @@
-.title {
-  text-align: left;
-  margin-top: 10px;
+.module-wrapper {
+  .title {
+    text-align: left;
+    margin-top: 10px;
 
-  .ivu-icon {
-    vertical-align: baseline;
+    .ivu-icon {
+      vertical-align: baseline;
+    }
   }
+
+  h2 {
+    display: inline;
+  }
+
+  p {
+    line-height: 1.6;
+    text-align: left;
+    text-indent: 2em;
+  }
+
+}
+
+.main {
+  max-width: 1400px;
+  margin: 50px auto;
 }
