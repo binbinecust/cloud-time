@@ -56,17 +56,19 @@ export default Vue.extend({
     margin-bottom: 20px;
   }
   .img-wrapper {
+    width: 210px;
     display: inline-block;
     margin-right: 20px;
     margin-bottom: 10px;
+    text-align: center;
     img {
       height: 200px;
     }
     p {
       text-indent: 0;
+      text-align: center;
     }
     p:nth-of-type(2) {
-      text-align: center;
       span:first-child {
         margin-right: 10px;
       }
