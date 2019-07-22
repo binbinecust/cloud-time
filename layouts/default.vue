@@ -36,6 +36,7 @@ html {
 body {
   margin-top: 20px;
   cursor: url('https://bibidaodao.cn/assets/album/cat.ico'), auto;
+  // background: linear-gradient(#e0eafc, #cfdef3);
 }
 
 /* *,

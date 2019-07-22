@@ -9,17 +9,19 @@
         <Icon type="ios-leaf" />
         <h2>{{ catalog.name }}</h2>
       </div>
-      <div
-        v-for="(work, index) in catalog.imgs"
-        :key="index"
-        class="img-wrapper"
-      >
-        <img :src="work.url" alt="" />
-        <p>作品名：{{ work.workName || '未命名作品' }}</p>
-        <p>
-          <span>作者：{{ work.student || '未知作者' }}</span
-          ><span>年龄：{{ work.age || '未知年龄' }}</span>
-        </p>
+      <div class="imgs">
+        <Card
+          v-for="(work, index) in catalog.imgs"
+          :key="index"
+          class="img-wrapper"
+        >
+          <img :src="work.url" alt="" />
+          <p>作品名：{{ work.workName || '未命名' }}</p>
+          <p>
+            <span>作者：{{ work.student || '未知' }}</span
+            ><span>年龄：{{ work.age || '未知' }}</span>
+          </p>
+        </Card>
       </div>
     </div>
   </div>
@@ -46,9 +48,28 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .works {
+  .imgs {
+    width: 100%;
+    text-align: left;
+  }
+  .title {
+    margin-bottom: 20px;
+  }
   .img-wrapper {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
     img {
       height: 200px;
+    }
+    p {
+      text-indent: 0;
+    }
+    p:nth-of-type(2) {
+      text-align: center;
+      span:first-child {
+        margin-right: 10px;
+      }
     }
   }
 }
