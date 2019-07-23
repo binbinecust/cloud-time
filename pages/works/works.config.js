@@ -7,7 +7,7 @@ export default [
         student: '李**',
         age: 8,
         workName: '浇花的女孩',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/caiqian1.jpeg'
+        url: require('./caiqian1.jpeg')
       },
       {
         student: '李**',
@@ -50,6 +50,24 @@ export default [
         age: 11,
         workName: '',
         url: 'https://www.cloud-time.net/assets/cloud-time/works/caiqian8.jpeg'
+      },
+      {
+        student: '',
+        age: 11,
+        workName: '',
+        url: 'https://www.cloud-time.net/assets/cloud-time/works/caiqian9.jpeg'
+      },
+      {
+        student: '',
+        age: 11,
+        workName: '',
+        url: 'https://www.cloud-time.net/assets/cloud-time/works/caiqian10.jpeg'
+      },
+      {
+        student: '',
+        age: 11,
+        workName: '',
+        url: 'https://www.cloud-time.net/assets/cloud-time/works/caiqian11.jpeg'
       }
     ]
   },
@@ -115,7 +133,7 @@ export default [
         student: '',
         age: 11,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/shuifen10.jpeg'
+        url: require('./shuifen10.jpeg')
       }
     ]
   },
