@@ -7,67 +7,80 @@ export default [
         student: '李**',
         age: 8,
         workName: '浇花的女孩',
-        url: require('./caiqian1.jpeg')
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/caiqian1.jpeg'
       },
       {
         student: '李**',
         age: 9,
         workName: '花海蝶舞',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/caiqian2.png'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/caiqian2.jpeg'
       },
       {
         student: '李**',
         age: 7,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/caiqian3.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/caiqian3.jpeg'
       },
       {
         student: '李**',
         age: 10,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/caiqian4.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/caiqian4.jpeg'
       },
       {
         student: '李**',
         age: 12,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/caiqian5.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/caiqian5.jpeg'
       },
       {
         student: '李**',
         age: 11,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/caiqian6.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/caiqian6.jpeg'
       },
       {
         student: '李**',
         age: 8,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/caiqian7.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/caiqian7.jpeg'
       },
       {
         student: '',
         age: 11,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/caiqian8.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/caiqian8.jpeg'
       },
       {
         student: '',
         age: 11,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/caiqian9.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/caiqian9.jpeg'
       },
       {
         student: '',
         age: 11,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/caiqian10.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/caiqian10.jpeg'
       },
       {
         student: '',
         age: 11,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/caiqian11.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/caiqian11.jpeg'
       }
     ]
   },
@@ -79,61 +92,73 @@ export default [
         student: '李**',
         age: 8,
         workName: '浇花的女孩',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/shuifen1.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/shuifen1.jpeg'
       },
       {
         student: '李**',
         age: 9,
         workName: '花海蝶舞',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/shuifen2.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/shuifen2.jpeg'
       },
       {
         student: '李**',
         age: 7,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/shuifen3.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/shuifen3.jpeg'
       },
       {
         student: '李**',
         age: 10,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/shuifen4.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/shuifen4.jpeg'
       },
       {
         student: '李**',
         age: 12,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/shuifen5.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/shuifen5.jpeg'
       },
       {
         student: '李**',
         age: 11,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/shuifen6.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/shuifen6.jpeg'
       },
       {
         student: '李**',
         age: 8,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/shuifen7.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/shuifen7.jpeg'
       },
       {
         student: '',
         age: 11,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/shuifen8.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/shuifen8.jpeg'
       },
       {
         student: '',
         age: 11,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/shuifen9.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/shuifen9.jpeg'
       },
       {
         student: '',
         age: 11,
         workName: '',
-        url: require('./shuifen10.jpeg')
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/shuifen10.jpeg',
+        rotate: true
       }
     ]
   },
@@ -145,76 +170,91 @@ export default [
         student: '李**',
         age: 8,
         workName: '浇花的女孩',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/xianmiao1.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/xianmiao1.jpeg'
       },
       {
         student: '李**',
         age: 9,
         workName: '花海蝶舞',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/xianmiao2.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/xianmiao2.jpeg'
       },
       {
         student: '李**',
         age: 7,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/xianmiao3.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/xianmiao3.jpeg'
       },
       {
         student: '李**',
         age: 10,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/xianmiao4.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/xianmiao4.jpeg'
       },
       {
         student: '李**',
         age: 12,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/xianmiao5.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/xianmiao5.jpeg'
       },
       {
         student: '李**',
         age: 11,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/xianmiao6.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/xianmiao6.jpeg'
       },
       {
         student: '李**',
         age: 8,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/xianmiao7.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/xianmiao7.jpeg'
       },
       {
         student: '',
         age: 11,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/xianmiao8.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/xianmiao8.jpeg'
       },
       {
         student: '',
         age: 11,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/xianmiao9.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/xianmiao9.jpeg'
+      },
+      {
+        student: '',
+        age: 11,
+        workName: '',
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/xianmiao10.jpeg'
       },
       {
         student: '',
         age: 11,
         workName: '',
         url:
-          'https://www.cloud-time.net/assets/cloud-time/works/xianmiao10.jpeg'
+          'https://www.cloud-time.net/assets/cloud-time/works-small/xianmiao11.jpeg'
       },
       {
         student: '',
         age: 11,
         workName: '',
         url:
-          'https://www.cloud-time.net/assets/cloud-time/works/xianmiao11.jpeg'
-      },
-      {
-        student: '',
-        age: 11,
-        workName: '',
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/works/xianmiao12.jpeg'
+          'https://www.cloud-time.net/assets/cloud-time/works-small/xianmiao12.jpeg'
       }
     ]
   },
@@ -226,61 +266,71 @@ export default [
         student: '李**',
         age: 8,
         workName: '浇花的女孩',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/sumiao1.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/sumiao1.jpeg'
       },
       {
         student: '李**',
         age: 9,
         workName: '花海蝶舞',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/sumiao2.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/sumiao2.jpeg'
       },
       {
         student: '李**',
         age: 7,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/sumiao3.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/sumiao3.jpeg'
       },
       {
         student: '李**',
         age: 10,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/sumiao4.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/sumiao4.jpeg'
       },
       {
         student: '李**',
         age: 12,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/sumiao5.jpeg'
-      },
-      {
-        student: '李**',
-        age: 11,
-        workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/sumiao6.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/sumiao5.jpeg'
       },
       {
         student: '李**',
         age: 8,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/sumiao7.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/sumiao7.jpeg'
       },
       {
         student: '',
         age: 11,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/sumiao8.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/sumiao8.jpeg'
       },
       {
         student: '',
         age: 11,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/sumiao9.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/sumiao9.jpeg'
       },
       {
         student: '',
         age: 11,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/sumiao10.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/sumiao10.jpeg'
       }
     ]
   },
@@ -292,43 +342,57 @@ export default [
         student: '李**',
         age: 8,
         workName: '浇花的女孩',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/huiben1.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/huiben1.jpeg'
       },
       {
         student: '李**',
         age: 9,
         workName: '花海蝶舞',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/huiben2.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/huiben2.jpeg'
       },
       {
         student: '李**',
         age: 7,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/huiben3.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/huiben3.jpeg'
       },
       {
         student: '李**',
         age: 10,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/huiben4.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/huiben4.jpeg'
       },
       {
         student: '李**',
         age: 12,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/huiben5.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/huiben5.jpeg'
       },
       {
         student: '李**',
         age: 11,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/huiben6.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/huiben6.jpeg'
       },
       {
         student: '李**',
         age: 8,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/huiben7.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/huiben7.jpeg'
       }
     ]
   },
@@ -340,31 +404,36 @@ export default [
         student: '李**',
         age: 8,
         workName: '浇花的女孩',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/bingxi1.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/bingxi1.jpeg'
       },
       {
         student: '李**',
         age: 9,
         workName: '花海蝶舞',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/bingxi2.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/bingxi2.jpeg'
       },
       {
         student: '李**',
         age: 7,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/bingxi3.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/bingxi3.jpeg'
       },
       {
         student: '李**',
         age: 10,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/bingxi4.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/bingxi4.jpeg'
       },
       {
         student: '李**',
         age: 12,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/bingxi5.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/bingxi5.jpeg'
       }
     ]
   },
@@ -376,85 +445,107 @@ export default [
         student: '李**',
         age: 8,
         workName: '浇花的女孩',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/naodong1.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/naodong1.jpeg'
       },
       {
         student: '李**',
         age: 9,
         workName: '花海蝶舞',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/naodong2.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/naodong2.jpeg'
       },
       {
         student: '李**',
         age: 7,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/naodong3.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/naodong3.jpeg'
       },
       {
         student: '李**',
         age: 10,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/naodong4.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/naodong4.jpeg'
       },
       {
         student: '李**',
         age: 12,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/naodong5.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/naodong5.jpeg'
       },
       {
         student: '李**',
         age: 12,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/naodong6.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/naodong6.jpeg'
       },
       {
         student: '李**',
         age: 12,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/naodong7.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/naodong7.jpeg'
       },
       {
         student: '李**',
         age: 12,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/naodong8.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/naodong8.jpeg'
       },
       {
         student: '李**',
         age: 12,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/naodong9.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/naodong9.jpeg'
       },
       {
         student: '李**',
         age: 12,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/naodong10.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/naodong10.jpeg'
       },
       {
         student: '李**',
         age: 12,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/naodong11.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/naodong11.jpeg'
       },
       {
         student: '李**',
         age: 12,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/naodong12.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/naodong12.jpeg'
       },
       {
         student: '李**',
         age: 12,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/naodong5.jpeg'
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/naodong5.jpeg'
       },
       {
         student: '李**',
         age: 12,
         workName: '',
-        url: 'https://www.cloud-time.net/assets/cloud-time/works/naodong13.jpeg'
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/works-small/naodong13.jpeg'
       }
     ]
   }

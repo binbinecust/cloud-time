@@ -26,7 +26,7 @@
             >阶段学习</MenuItem
           >
         </Submenu>
-        <MenuItem name="/theme-activity" to="/theme-activity">
+        <MenuItem name="/activity" to="/activity">
           <Icon type="ios-construct" />
           主题活动
         </MenuItem>

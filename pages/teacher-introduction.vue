@@ -67,17 +67,13 @@
         </div>
       </TabPane>
     </Tabs>
-    <Modal v-model="showModel" width="600">
-      <!-- <p slot="header" style="color:#f60;text-align:center">
-            <Icon type="ios-information-circle"></Icon>
-            <span>Delete confirmation</span>
-        </p> -->
+    <Modal v-model="showModel" width="600" :closable="false">
       <div style="text-align:center; width:500px;display:inline-block;">
         <img :src="curViewPic" alt="" style="width:100%;" />
       </div>
-      <!-- <div slot="footer">
-            <Button type="error" size="large" long :loading="modal_loading" @click="del">Delete</Button>
-        </div> -->
+      <div slot="footer">
+        <Button type="info" @click="confirm">确认</Button>
+      </div>
     </Modal>
   </div>
 </template>
@@ -108,6 +104,9 @@ export default Vue.extend({
       } else {
         this.curViewPic = item
       }
+    },
+    confirm() {
+      this.showModel = false
     }
     // ======================业务逻辑函数======================
     // ========================纯函数=========================

@@ -1,29 +1,24 @@
 <template>
-  <div class="works main">
+  <div class="activities main">
     <div
-      v-for="catalog in catalogs"
-      :key="catalog.catalog"
+      v-for="activity in activities"
+      :key="activity.catalog"
       class="module-wrapper"
     >
       <div class="title">
         <Icon type="ios-leaf" />
-        <h2>{{ catalog.name }}</h2>
+        <h2>{{ activity.name }}</h2>
       </div>
       <div class="imgs">
         <Card
-          v-for="(work, index) in catalog.imgs"
+          v-for="(imgItem, index) in activity.imgs"
           :key="index"
           class="img-wrapper"
-          :class="work.rotate ? 'rotate' : ''"
+          :class="imgItem.rotate ? 'rotate' : ''"
         >
           <div class="img">
-            <img :src="work.url" alt="" @click="viewPic(work)" />
+            <img :src="imgItem.url" alt="" @click="viewPic(imgItem)" />
           </div>
-          <p>作品名：{{ work.workName || '未命名' }}</p>
-          <p>
-            <span>作者：{{ work.student || '未知' }}</span
-            ><span>年龄：{{ work.age || '未知' }}</span>
-          </p>
         </Card>
       </div>
     </div>
@@ -40,19 +35,19 @@
 
 <script>
 import Vue from 'vue'
-import catalogs from './works.config'
+import activities from './activities.config'
 export default Vue.extend({
   data() {
     return {
-      catalogs: catalogs,
+      activities: activities,
       showModel: false,
       curViewPic: ''
     }
   },
   methods: {
-    viewPic(work) {
+    viewPic(item) {
       this.showModel = true
-      this.curViewPic = work.url.replace(/-small/, '')
+      this.curViewPic = item.url.replace(/-small/, '')
     },
     confirm() {
       this.showModel = false
@@ -61,12 +56,12 @@ export default Vue.extend({
 })
 </script>
 <style lang="scss">
-.works {
+.activities {
   .rotate {
     vertical-align: top;
     .ivu-card-body {
       padding: 0;
-      height: 292px;
+      height: 240px;
       .img {
         height: 223px;
         line-height: 223px;
@@ -82,7 +77,7 @@ export default Vue.extend({
 </style>
 
 <style lang="scss" scoped>
-.works {
+.activities {
   .imgs {
     width: 100%;
     text-align: left;
