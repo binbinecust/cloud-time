@@ -45,9 +45,9 @@
       </Menu>
     </div>
     <div class="call">
-      <a href="tel:13127752060">
+      <a href="tel:010-62664552">
         <Icon type="ios-call" :size="isPC ? 50 : 20" />
-        13127752060
+        010-62664552
       </a>
     </div>
   </div>

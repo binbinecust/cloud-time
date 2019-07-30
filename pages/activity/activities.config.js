@@ -113,6 +113,39 @@ export default [
     ]
   },
   {
+    catalog: 'adult',
+    name: '成人美术',
+    imgs: [
+      {
+        url: 'https://www.cloud-time.net/assets/cloud-time/adult1-small.jpeg'
+      },
+      {
+        url: 'https://www.cloud-time.net/assets/cloud-time/adult2-small.jpeg'
+      },
+      {
+        url: 'https://www.cloud-time.net/assets/cloud-time/adult3-small.jpeg'
+      },
+      {
+        rotate: true,
+        url: 'https://www.cloud-time.net/assets/cloud-time/adult4-small.jpeg'
+      },
+      {
+        url: 'https://www.cloud-time.net/assets/cloud-time/adult5-small.jpeg'
+      },
+      {
+        rotate: true,
+        url: 'https://www.cloud-time.net/assets/cloud-time/adult6-small.jpeg'
+      },
+      {
+        url: 'https://www.cloud-time.net/assets/cloud-time/adult7-small.jpeg'
+      },
+      {
+        rotate: true,
+        url: 'https://www.cloud-time.net/assets/cloud-time/adult8-small.jpeg'
+      }
+    ]
+  },
+  {
     catalog: 'traning',
     name: '国展集训',
     imgs: [

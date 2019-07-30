@@ -61,9 +61,42 @@
             @click="viewPic('meng')"
           />
           <p class="name">孟汐</p>
+          <Tag color="warning">亲和力</Tag>
+          <Tag color="blue">循循善诱</Tag>
+          <Tag color="pink">专业能力强</Tag>
         </div>
         <div class="tab-content">
-          <p>2008年考入鲁迅美术学院(大连校区)；</p>
+          <div class="part">
+            <h2>个人简介</h2>
+            <p>2008年考入鲁迅美术学院(大连校区)；</p>
+            <p>2011年考取中国流行色协会，色彩搭配师3级（cfca）</p>
+            <p>2016年6月辅导学生张榕获得全国中小学生绘画书法作品书画类二等奖</p>
+            <p>
+              2015年至今辅导300多位学生参加中国美术学会社会美术水平考试，通过率100%
+            </p>
+            <p>
+              2019年4月学生<a
+                @click="
+                  viewPic(
+                    'https://www.cloud-time.net/assets/cloud-time/chenbingru.jpeg'
+                  )
+                "
+                >陈炳茹获得ICAE国际儿童画展前100名</a
+              >，作品在国家会议中心巡展，受组委会邀请出行日本东京举行的中日文化交流访问活动开幕式
+            </p>
+          </div>
+          <div class="part">
+            <h2>教师风采</h2>
+            <div class="awards">
+              <div
+                v-for="(item, index) in miens"
+                :key="index"
+                @click="viewPic(item)"
+              >
+                <img :src="item" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </TabPane>
     </Tabs>
@@ -90,8 +123,15 @@ export default Vue.extend({
         require('../assets/img/t3.jpeg'),
         require('../assets/img/t4.jpeg')
       ],
+      miens: [],
       curViewPic: ''
     }
+  },
+  mounted() {
+    this.miens = Array.from({ length: 9 }).map((item, index) => {
+      return `https://www.cloud-time.net/assets/cloud-time/steam${index +
+        1}.jpg`
+    })
   },
   methods: {
     // ======================事件处理函数======================

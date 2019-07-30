@@ -389,6 +389,7 @@ export default [
         student: '李**',
         age: 12,
         workName: '',
+        rotate: true,
         url: 'https://www.cloud-time.net/assets/cloud-time/bingxi6-small.jpeg'
       }
     ]

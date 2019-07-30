@@ -8,7 +8,7 @@
               <img src="../assets/img/logo.jpg" alt="" />
               <span>云时光艺术工作室</span>
             </div>
-            <div>联系电话：<a href="tel:+13127752060">13127752060</a></div>
+            <div>联系电话：<a href="tel:+010-62664552">010-62664552</a></div>
             <div>
               邮箱：<a href="mailto:cloudtimes2019@163.com"
                 >cloudtimes2019@163.com</a
