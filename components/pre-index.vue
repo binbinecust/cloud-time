@@ -41,18 +41,18 @@ export default Vue.extend({
       const animateDom = document.getElementById('animation')
       const images = this.isPC
         ? [
-            require('../assets/pre-index/pc/1.jpg'),
-            require('../assets/pre-index/pc/2.jpg'),
-            require('../assets/pre-index/pc/3.jpg'),
-            require('../assets/pre-index/pc/4.jpg'),
-            require('../assets/pre-index/pc/5.jpg'),
-            require('../assets/pre-index/pc/6.jpg')
+            require('../assets/img/pc-1.jpg'),
+            require('../assets/img/pc-2.jpg'),
+            require('../assets/img/pc-3.jpg'),
+            require('../assets/img/pc-4.jpg'),
+            require('../assets/img/pc-5.jpg'),
+            require('../assets/img/pc-6.jpg')
           ]
         : [
-            require('../assets/pre-index/phone/1.jpg'),
-            require('../assets/pre-index/phone/2.jpg'),
-            require('../assets/pre-index/phone/3.jpg'),
-            require('../assets/pre-index/phone/4.jpg')
+            require('../assets/img/phone-1.jpg'),
+            require('../assets/img/phone-2.jpg'),
+            require('../assets/img/phone-3.jpg'),
+            require('../assets/img/phone-4.jpg')
           ]
       this.animation = mChange.makeMatrixChange(animateDom, {
         images: images,

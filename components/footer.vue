@@ -5,7 +5,7 @@
         <div class="contact-body">
           <div class="left">
             <div class="logo">
-              <img src="../assets/footer/6.jpg" alt="" />
+              <img src="../assets/img/logo.jpg" alt="" />
               <span>云时光艺术工作室</span>
             </div>
             <div>联系电话：<a href="tel:+13127752060">13127752060</a></div>
@@ -24,7 +24,7 @@
             </div>
           </div>
           <div class="right">
-            <img src="../assets/footer/binbin.jpeg" alt="云时光艺术工作室" />
+            <img src="../assets/img/binbin.jpeg" alt="云时光艺术工作室" />
             <p>关注我们</p>
           </div>
         </div>

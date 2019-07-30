@@ -64,24 +64,9 @@ export default {
       isShow: true,
       activitys: [
         {
-          img: require('@/assets/activitys/a.jpg'),
-          txt: '面包屑1',
+          img: '',
+          txt: 'hhah',
           des: '我是孟大宝'
-        },
-        {
-          img: require('@/assets/activitys/a.jpg'),
-          txt: '面包屑2',
-          des: '我是彬大宝'
-        },
-        {
-          img: require('@/assets/activitys/a.jpg'),
-          txt: '面包屑3',
-          des: '我是孟大宝'
-        },
-        {
-          img: require('@/assets/activitys/a.jpg'),
-          txt: '面包屑4',
-          des: '我是彬大宝'
         }
       ]
     }

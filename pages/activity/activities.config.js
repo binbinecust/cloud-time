@@ -4,28 +4,22 @@ export default [
     name: '中央美术馆',
     imgs: [
       {
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/cafa1.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/cafa1-small.jpeg'
       },
       {
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/cafa2.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/cafa2-small.jpeg'
       },
       {
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/cafa3.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/cafa3-small.jpeg'
       },
       {
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/cafa4.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/cafa4-small.jpeg'
       },
       {
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/cafa5.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/cafa5-small.jpeg'
       },
       {
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/cafa6.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/cafa6-small.jpeg'
       }
     ]
   },
@@ -34,38 +28,31 @@ export default [
     name: '学习日常',
     imgs: [
       {
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/daily1.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/daily1-small.jpeg'
       },
       {
         rotate: true,
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/daily2.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/daily2-small.jpeg'
       },
       {
         rotate: true,
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/daily3.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/daily3-small.jpeg'
       },
       {
         rotate: true,
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/daily4.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/daily4-small.jpeg'
       },
       {
         rotate: true,
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/daily5.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/daily5-small.jpeg'
       },
       {
         rotate: true,
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/daily6.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/daily6-small.jpeg'
       },
       {
         rotate: true,
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/daily7.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/daily7-small.jpeg'
       }
     ]
   },
@@ -76,37 +63,37 @@ export default [
       {
         rotate: true,
         url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/sketching1.jpeg'
+          'https://www.cloud-time.net/assets/cloud-time/sketching1-small.jpeg'
       },
       {
         url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/sketching2.jpeg'
+          'https://www.cloud-time.net/assets/cloud-time/sketching2-small.jpeg'
       },
       {
         url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/sketching3.jpeg'
+          'https://www.cloud-time.net/assets/cloud-time/sketching3-small.jpeg'
       },
       {
         url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/sketching4.jpeg'
-      },
-      {
-        rotate: true,
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/sketching5.jpeg'
-      },
-      {
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/sketching6.jpeg'
-      },
-      {
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/sketching7.jpeg'
+          'https://www.cloud-time.net/assets/cloud-time/sketching4-small.jpeg'
       },
       {
         rotate: true,
         url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/sketching8.jpeg'
+          'https://www.cloud-time.net/assets/cloud-time/sketching5-small.jpeg'
+      },
+      {
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/sketching6-small.jpeg'
+      },
+      {
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/sketching7-small.jpeg'
+      },
+      {
+        rotate: true,
+        url:
+          'https://www.cloud-time.net/assets/cloud-time/sketching8-small.jpeg'
       }
     ]
   },
@@ -115,16 +102,13 @@ export default [
     name: '今日美术馆',
     imgs: [
       {
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/today1.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/today1-small.jpeg'
       },
       {
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/today2.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/today2-small.jpeg'
       },
       {
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/today3.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/today3-small.jpeg'
       }
     ]
   },
@@ -133,50 +117,41 @@ export default [
     name: '国展集训',
     imgs: [
       {
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/training1.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/training1-small.jpeg'
       },
       {
         rotate: true,
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/training2.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/training2-small.jpeg'
       },
       {
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/training3.jpeg'
-      },
-      {
-        rotate: true,
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/training4.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/training3-small.jpeg'
       },
       {
         rotate: true,
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/training5.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/training4-small.jpeg'
       },
       {
         rotate: true,
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/training6.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/training5-small.jpeg'
       },
       {
         rotate: true,
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/training7.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/training6-small.jpeg'
       },
       {
         rotate: true,
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/training8.jpeg'
+        url: 'https://www.cloud-time.net/assets/cloud-time/training7-small.jpeg'
+      },
+      {
+        rotate: true,
+        url: 'https://www.cloud-time.net/assets/cloud-time/training8-small.jpeg'
+      },
+      {
+        url: 'https://www.cloud-time.net/assets/cloud-time/training9-small.jpeg'
       },
       {
         url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/training9.jpeg'
-      },
-      {
-        url:
-          'https://www.cloud-time.net/assets/cloud-time/activities-small/training10.jpeg'
+          'https://www.cloud-time.net/assets/cloud-time/training10-small.jpeg'
       }
     ]
   }

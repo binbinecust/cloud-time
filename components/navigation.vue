@@ -1,7 +1,7 @@
 <template>
   <div :class="!isPC ? 'mobile' : ''">
     <div class="logo">
-      <img src="../assets/footer/6.jpg" alt="云时光艺术工作室" />
+      <img src="../assets/img/logo.jpg" alt="云时光艺术工作室" />
       <span>云时光艺术工作室</span>
     </div>
     <div class="menu">

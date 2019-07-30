@@ -4,7 +4,7 @@
       <TabPane label="卢婷婷">
         <div class="img-wrapper">
           <img
-            src="../assets/teacher-introduction/lutingting.jpeg"
+            src="../assets/img/lutingting.jpeg"
             alt="卢婷婷"
             @click="viewPic('lu')"
           />
@@ -56,7 +56,7 @@
       <TabPane label="孟汐">
         <div class="img-wrapper">
           <img
-            src="../assets/teacher-introduction/mengxi.jpeg"
+            src="../assets/img/mengxi.jpeg"
             alt="孟汐"
             @click="viewPic('meng')"
           />
@@ -85,10 +85,10 @@ export default Vue.extend({
     return {
       showModel: false,
       awards: [
-        require('../assets/teacher-introduction/awards/t1.jpeg'),
-        require('../assets/teacher-introduction/awards/t2.jpeg'),
-        require('../assets/teacher-introduction/awards/t3.jpeg'),
-        require('../assets/teacher-introduction/awards/t4.jpeg')
+        require('../assets/img/t1.jpeg'),
+        require('../assets/img/t2.jpeg'),
+        require('../assets/img/t3.jpeg'),
+        require('../assets/img/t4.jpeg')
       ],
       curViewPic: ''
     }
@@ -98,9 +98,9 @@ export default Vue.extend({
     viewPic(item) {
       this.showModel = true
       if (item === 'lu') {
-        this.curViewPic = require('../assets/teacher-introduction/lutingting.jpeg')
+        this.curViewPic = require('../assets/img/lutingting.jpeg')
       } else if (item === 'meng') {
-        this.curViewPic = require('../assets/teacher-introduction/mengxi.jpeg')
+        this.curViewPic = require('../assets/img/mengxi.jpeg')
       } else {
         this.curViewPic = item
       }
