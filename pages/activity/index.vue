@@ -63,8 +63,8 @@ export default Vue.extend({
       padding: 0;
       height: 240px;
       .img {
-        height: 223px;
-        line-height: 223px;
+        height: 240px;
+        line-height: 240px;
         img {
           vertical-align: middle;
           width: 100%;

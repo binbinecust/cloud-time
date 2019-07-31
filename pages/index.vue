@@ -65,8 +65,8 @@ export default {
       activitys: [
         {
           img: '',
-          txt: 'hhah',
-          des: '我是孟大宝'
+          txt: 'test',
+          des: 'test'
         }
       ]
     }

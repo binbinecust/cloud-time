@@ -19,11 +19,11 @@
           <div class="img">
             <img :src="work.url" alt="" @click="viewPic(work)" />
           </div>
-          <p>作品名：{{ work.workName || '未命名' }}</p>
+          <!-- <p>作品名：{{ work.workName || '未命名' }}</p>
           <p>
             <span>作者：{{ work.student || '未知' }}</span
             ><span>年龄：{{ work.age || '未知' }}</span>
-          </p>
+          </p> -->
         </Card>
       </div>
     </div>
@@ -66,10 +66,8 @@ export default Vue.extend({
     vertical-align: top;
     .ivu-card-body {
       padding: 0;
-      height: 292px;
       .img {
-        height: 223px;
-        line-height: 223px;
+        line-height: 240px;
         img {
           vertical-align: middle;
           width: 100%;
@@ -99,15 +97,15 @@ export default Vue.extend({
     img {
       height: 200px;
     }
-    p {
-      text-indent: 0;
-      text-align: center;
-    }
-    p:nth-of-type(2) {
-      span:first-child {
-        margin-right: 10px;
-      }
-    }
+    // p {
+    //   text-indent: 0;
+    //   text-align: center;
+    // }
+    // p:nth-of-type(2) {
+    //   span:first-child {
+    //     margin-right: 10px;
+    //   }
+    // }
   }
 }
 </style>
