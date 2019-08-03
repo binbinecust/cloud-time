@@ -105,7 +105,7 @@
         <img :src="curViewPic" alt="" style="width:100%;" />
       </div>
       <div slot="footer">
-        <Button type="info" @click="confirm">确认</Button>
+        <Button type="info" @click="confirm">关闭</Button>
       </div>
     </Modal>
   </div>

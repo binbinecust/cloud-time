@@ -10,27 +10,42 @@
       >
         <CarouselItem class="item">
           <div>
-            <img src="@/assets/slider/a.jpg" alt="" />
+            <img
+              src="https://www.cloud-time.net/assets/cloud-time/slider1.jpg"
+              alt=""
+            />
           </div>
         </CarouselItem>
         <CarouselItem class="item">
           <div>
-            <img src="@/assets/slider/b.jpg" alt="" />
+            <img
+              src="https://www.cloud-time.net/assets/cloud-time/slider2.jpg"
+              alt=""
+            />
           </div>
         </CarouselItem>
         <CarouselItem class="item">
           <div>
-            <img src="@/assets/slider/c.jpg" alt="" />
+            <img
+              src="https://www.cloud-time.net/assets/cloud-time/slider3.jpg"
+              alt=""
+            />
           </div>
         </CarouselItem>
         <CarouselItem class="item">
           <div>
-            <img src="@/assets/slider/d.jpg" alt="" />
+            <img
+              src="https://www.cloud-time.net/assets/cloud-time/slider4.jpg"
+              alt=""
+            />
           </div>
         </CarouselItem>
         <CarouselItem class="item">
           <div>
-            <img src="@/assets/slider/e.jpg" alt="" />
+            <img
+              src="https://www.cloud-time.net/assets/cloud-time/slider5.jpg"
+              alt=""
+            />
           </div>
         </CarouselItem>
       </Carousel>
@@ -65,8 +80,8 @@ export default {
       activitys: [
         {
           img: '',
-          txt: 'test',
-          des: 'test'
+          txt: '敬请期待',
+          des: ''
         }
       ]
     }
@@ -84,7 +99,7 @@ export default {
 <style scoped lang="scss">
 .carousel {
   img {
-    height: 500px;
+    height: 600px;
   }
   .item {
     background: black;

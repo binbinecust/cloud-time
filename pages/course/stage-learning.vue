@@ -3,16 +3,16 @@
     <div class="item module-wrapper">
       <div class="title">
         <Icon type="ios-leaf" />
-        <h2>少儿美术</h2>
+        <h2 class="title-name">少儿美术</h2>
       </div>
-      <p>少儿美术教学内容</p>
+      <p class="content">少儿美术教学内容</p>
     </div>
     <div class="item module-wrapper">
       <div class="title">
         <Icon type="ios-leaf" />
-        <h2>成人美术</h2>
+        <h2 class="title-name">成人美术</h2>
       </div>
-      <p>成人美术教学内容</p>
+      <p class="content">成人美术教学内容</p>
     </div>
   </div>
 </template>
