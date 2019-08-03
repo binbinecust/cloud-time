@@ -15,7 +15,7 @@
   "config": {
     "nuxt": {
       "host": "localhost",
-      "port": "9000"
+      "port": "8000"
     }
   },
   "dependencies": {
