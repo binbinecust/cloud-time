@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="layout-default">
     <main>
-      <navigation></navigation>
+      <navigation v-show="show"></navigation>
       <nuxt />
-      <footer-com></footer-com>
+      <footer-com v-show="show"></footer-com>
     </main>
   </div>
 </template>
@@ -14,6 +14,14 @@ export default {
   components: {
     navigation,
     footerCom
+  },
+  data() {
+    return {
+      show: false
+    }
+  },
+  mounted() {
+    this.show = !/(login|config)/.test(this.$route.fullPath)
   }
 }
 </script>
@@ -34,9 +42,12 @@ html {
   text-align: center;
 }
 body {
-  margin-top: 20px;
+  // margin-top: 20px;
   cursor: url('https://bibidaodao.cn/assets/album/cat.ico'), auto;
   // background: linear-gradient(#e0eafc, #cfdef3);
+}
+.layout-default {
+  margin-top: 20px;
 }
 
 /* *,
