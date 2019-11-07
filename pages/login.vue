@@ -1,18 +1,39 @@
 <template>
   <div class="login">
-    <Form ref="formInline" inline class="form">
+    <Form
+      ref="formInline"
+      inline
+      class="form"
+    >
       <FormItem prop="user">
-        <Input v-model="user" type="text" placeholder="Username">
-          <Icon slot="prepend" type="ios-person-outline"></Icon>
+        <Input
+          v-model="user"
+          type="text"
+          placeholder="Username"
+        >
+        <Icon
+          slot="prepend"
+          type="ios-person-outline"
+        ></Icon>
         </Input>
       </FormItem>
       <FormItem prop="password">
-        <Input v-model="password" type="password" placeholder="Password">
-          <Icon slot="prepend" type="ios-lock-outline"></Icon>
+        <Input
+          v-model="password"
+          type="password"
+          placeholder="Password"
+        >
+        <Icon
+          slot="prepend"
+          type="ios-lock-outline"
+        ></Icon>
         </Input>
       </FormItem>
       <FormItem>
-        <Button type="primary" @click="handleSubmit">登录</Button>
+        <Button
+          type="primary"
+          @click="handleSubmit"
+        >登录</Button>
       </FormItem>
     </Form>
   </div>
@@ -36,7 +57,6 @@ export default Vue.extend({
           password: this.password
         })
         .then(res => {
-          console.log(res, 'res')
           if (res && res.data && res.data.code === 0) {
             this.$Message.success(res.data.message)
             this.$router.push('/config')
