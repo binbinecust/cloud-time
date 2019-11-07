@@ -58,6 +58,7 @@ export default Vue.extend({
         })
         .then(res => {
           if (res && res.data && res.data.code === 0) {
+            console.log('test')
             this.$Message.success(res.data.message)
             this.$router.push('/config')
           }
