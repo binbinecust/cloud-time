@@ -21,7 +21,6 @@
 <script>
 import Vue from 'vue'
 import URL from '../http/url.js'
-
 export default Vue.extend({
   data() {
     return {
@@ -40,12 +39,10 @@ export default Vue.extend({
           console.log(res, 'res')
           if (res && res.data && res.data.code === 0) {
             this.$Message.success(res.data.message)
-            // this.$route.push('/config');
+            this.$router.push('/config')
           }
         })
-        .catch(() => {
-          // this.$Message.error(err.message)
-        })
+        .catch(() => {})
     },
     handleSubmit() {
       this.login()

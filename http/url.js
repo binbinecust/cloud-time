@@ -1,3 +1,4 @@
 export default {
-  LOGIN: '/api/login'
+  LOGIN: '/api/admin/login',
+  LOGOUT: '/api/admin/logout'
 }

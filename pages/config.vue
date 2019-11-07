@@ -4,12 +4,16 @@
 
 <script>
 import Vue from 'vue'
+import URL from '../http/url.js'
 
 export default Vue.extend({
   data() {
     return {}
   },
-  methods: {}
+  methods: {},
+  destroyed() {
+    this.$axios.post(URL.LOGOUT).then()
+  }
 })
 </script>
 
