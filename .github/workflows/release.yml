@@ -13,6 +13,20 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@master
+      - name: wechat-work robot message
+        uses: fifsky/wechat-work-action@master
+        with:
+          url: ${{ secrets.WECHATWORK_WEBHOOK}}
+          type: markdown
+          content: |
+            # Tips
+            ## Hello
+            > from github action message
+            > ^_^
+            - repository: ${{ github.repository }}
+            - committer: ${{ github.actor }}
+            - compare: [view](${{ github.event.compare }})
+            - job status: ${{ job.status }}
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1.0.0
