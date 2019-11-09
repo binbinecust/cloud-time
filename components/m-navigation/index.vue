@@ -20,44 +20,30 @@
       <div class="mask" @click="hideModel"></div>
       <div class="content">
         <a @click="changeRoute('interpretation')">
-          <img
-            src="https://t.focus-res.cn/fe-node/assets/images/recognization.97e32b57.png"
-            alt=""
-          />
+          <span class="iconfont">&#xe608;</span>
           <span>解读云时光</span>
         </a>
         <a @click="changeRoute('course')">
-          <img
-            src="https://t.focus-res.cn/fe-node/assets/images/recognization.97e32b57.png"
-            alt=""
-          />
+          <span class="iconfont">&#xe600;</span>
           <span>课程简介</span>
         </a>
         <a @click="changeRoute('teacher-introduction')">
-          <img
-            src="https://t.focus-res.cn/fe-node/assets/images/recognization.97e32b57.png"
-            alt=""
-          />
+          <span class="iconfont">&#xe6d6;</span>
           <span>教师介绍</span>
         </a>
         <a @click="changeRoute('activity')">
-          <img
-            src="https://t.focus-res.cn/fe-node/assets/images/recognization.97e32b57.png"
-            alt=""
-          />
+          <span class="iconfont">&#xe662;</span>
           <span>主题活动</span>
         </a>
         <a @click="changeRoute('works')">
-          <img
-            src="https://t.focus-res.cn/fe-node/assets/images/recognization.97e32b57.png"
-            alt=""
-          />
+          <span class="iconfont">&#xe649;</span>
           <span>学生作品</span>
         </a>
       </div>
     </div>
-    <div v-if="formVisible">
-      我是表单
+    <div v-if="formVisible" class="pop-form">
+      <MForm></MForm>
+      <div class="iconfont close" @click="closeForm">&#xe63d;</div>
     </div>
   </div>
 </template>
@@ -65,8 +51,12 @@
 <script>
 import Vue from 'vue'
 import throttle from 'lodash.throttle'
+import MForm from '../../components/m-form/index'
 
 export default Vue.extend({
+  components: {
+    MForm
+  },
   data() {
     return {
       visible: false,
@@ -84,13 +74,16 @@ export default Vue.extend({
     },
     showForm() {
       this.formVisible = true
+      this.visible = false
       this.fixedBodyPosition()
     },
     toggleModel() {
       this.visible = !this.visible
+      this.fixedBodyPosition(this.visible)
     },
     hideModel() {
       this.visible = false
+      this.fixedBodyPosition(false)
     },
 
     initScroll() {
@@ -110,13 +103,19 @@ export default Vue.extend({
       // const curPage = this.$route.name
       const classLists = document.querySelector('body').classList
       if (showPopup) {
-        this.pageYOffset = window.pageYOffset
+        this.pageYOffset =
+          parseInt(document.querySelector('body').style.top) ||
+          window.pageYOffset
         document.querySelector('body').style = `top: -${window.pageYOffset}px`
         setTimeout(() => classLists.add('fixed'), 100)
       } else {
         classLists.remove('fixed')
         scrollTo(0, this.pageYOffset)
       }
+    },
+    closeForm() {
+      this.formVisible = false
+      this.fixedBodyPosition(false)
     }
   }
 })
@@ -129,6 +128,25 @@ body {
     position: fixed;
     left: 0;
     right: 0;
+  }
+}
+.pop-form {
+  z-index: 99999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  .close {
+    position: absolute;
+    right: 30px;
+    top: 120px;
+    color: white;
+    font-size: 50px;
   }
 }
 .nav-bar-wrapper {
@@ -217,6 +235,26 @@ body {
       height: 100%;
       background: rgba(0, 0, 0, 0.5);
       z-index: -1;
+    }
+
+    .iconfont {
+      margin-right: 20px;
+      font-size: 35px;
+    }
+    a:nth-child(1) .iconfont {
+      color: rgb(232, 173, 30);
+    }
+    a:nth-child(2) .iconfont {
+      color: rgb(255, 60, 101);
+    }
+    a:nth-child(3) .iconfont {
+      color: rgb(52, 143, 251);
+    }
+    a:nth-child(4) .iconfont {
+      color: #d366c9;
+    }
+    a:nth-child(5) .iconfont {
+      color: #39c1ce;
     }
 
     .content {
@@ -346,6 +384,9 @@ body {
 .scroll .nav-bar {
   background: white;
   animation: nav-animation 1s linear normal forwards;
+  .iconfont {
+    color: rgba(0, 0, 0, 0.5);
+  }
 
   a.logo {
     background: url('https://t.focus-res.cn/fe-node/assets/images/recognization.97e32b57.png')

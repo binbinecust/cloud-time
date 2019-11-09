@@ -10,10 +10,10 @@ export default Vue.extend({
   data() {
     return {}
   },
-  methods: {},
   destroyed() {
     this.$axios.post(URL.LOGOUT).then()
-  }
+  },
+  methods: {}
 })
 </script>
 
