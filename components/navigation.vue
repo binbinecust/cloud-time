@@ -1,5 +1,5 @@
 <template>
-  <div :class="!isPC ? 'mobile' : ''">
+  <div :class="!isPC ? 'mobile' : ''" class="nav-wrapper">
     <div class="logo">
       <img src="../assets/img/logo.jpg" alt="云时光艺术工作室" />
       <span>云时光艺术工作室</span>
@@ -66,6 +66,9 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+.nav-wrapper {
+  margin-top: 20px;
+}
 .mobile {
   .logo {
     position: absolute;

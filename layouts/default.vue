@@ -1,27 +1,158 @@
 <template>
   <div class="layout-default">
     <main>
-      <navigation v-show="show"></navigation>
+      <m-nav v-if="!isPC"></m-nav>
+      <navigation v-if="show && isPC"></navigation>
       <nuxt />
-      <footer-com v-show="show"></footer-com>
+      <footer-com v-if="show && isPC"></footer-com>
     </main>
   </div>
 </template>
 <script>
 import navigation from '@/components/navigation'
+import MNav from '@/components/m-navigation/index.vue'
 import footerCom from '@/components/footer.vue'
+
 export default {
   components: {
     navigation,
+    MNav,
     footerCom
   },
   data() {
     return {
-      show: false
+      show: false,
+      isPC: this.$store.state.isPC
     }
   },
   mounted() {
+    let deviceWidth = document.documentElement.clientWidth
+    if (deviceWidth > 640) deviceWidth = 640
+    document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px'
     this.show = !/(login|config)/.test(this.$route.fullPath)
+    this.initShare()
+  },
+  methods: {
+    initShare() {
+      const LoadScript = function(url, callback) {
+        let script = document.createElement('script')
+        script.type = 'text/javascript'
+        const cb = function() {
+          callback && callback()
+          script.onload = script.onreadystatechange = null
+          if (script.parentNode) {
+            script.parentNode.removeChild(script)
+          }
+          script = null
+        }
+        if (script.readyState) {
+          // IE
+          script.onreadystatechange = function() {
+            if (/loaded|complete/.test(script.readyState)) {
+              cb()
+            }
+          }
+        } else {
+          script.onload = function() {
+            cb()
+          }
+        }
+        script.src = url
+        document.body.appendChild(script)
+      }
+
+      const WxShare = {
+        init: function(
+          shareParam = {
+            title: '',
+            desc: '',
+            pic: '',
+            url: ''
+          }
+        ) {
+          // loadJs
+          LoadScript('//res.wx.qq.com/open/js/jweixin-1.0.0.js', function() {
+            const wxShare = {
+              init: function(opt) {
+                const m = this
+                const apiList = [
+                  'onMenuShareTimeline',
+                  'onMenuShareAppMessage',
+                  'onMenuShareQQ',
+                  'onMenuShareWeibo',
+                  'onMenuShareQZone'
+                ]
+                const d = {
+                  appId: 1232312312,
+                  timestamp: +new Date(),
+                  nonceStr: '31231231',
+                  signature: 34924234
+                }
+                wx.config({
+                  debug: false, // true为调试模式，线上需置为false
+                  appId: d.appId,
+                  timestamp: d.timestamp,
+                  nonceStr: d.nonceStr,
+                  signature: d.signature,
+                  jsApiList: apiList // 需要使用的JS接口列表
+                })
+                const wxData = {
+                  title: opt.title,
+                  desc: opt.desc,
+                  link: opt.url,
+                  imgUrl: opt.pic,
+                  type: 'link',
+                  dataUrl: '',
+                  success: function() {
+                    if (opt.success) {
+                      opt.success.call(m, opt)
+                    }
+                  },
+                  cancel: function() {}
+                }
+                wx.ready(function() {
+                  wx.onMenuShareTimeline(wxData) // 分享到朋友圈
+                  wx.onMenuShareAppMessage(wxData) // 分享给朋友
+                  wx.onMenuShareQQ(wxData) // 分享到QQ
+                  wx.onMenuShareWeibo(wxData) // 分享到腾讯微博
+                  wx.onMenuShareQZone(wxData) // 分享到QQ空间
+                })
+                wx.error(function(res) {
+                  // console.log(res);
+                })
+              }
+            }
+            const isWeixin = /micromessenger/gi.test(window.navigator.userAgent) // 判断是否微信环境
+            let s = {}
+
+            s = {
+              title: shareParam.title || document.title,
+              desc:
+                shareParam.desc ||
+                document
+                  .querySelector('meta[name=description]')
+                  .getAttribute('content'),
+              pic:
+                shareParam.pic ||
+                'https://t.focus-res.cn/front-end/image/focuslive-app-icon.png',
+              url: shareParam.url || window.location.href.split('#')[0]
+            }
+
+            if (isWeixin) {
+              wxShare.init(s)
+            }
+          })
+        }
+      }
+
+      WxShare.init({
+        title: '云朵时光艺术工作室',
+        desc: '云朵时光是一个牛逼到爆裂的公司',
+        pic:
+          'https://t-img.51f.com/sh120x120sh/xf/xw/81f9d500-d71c-4d3e-97fe-077c0e140464.JPEG',
+        url: window.location.href.split('#')[0]
+      })
+    }
   }
 }
 </script>
@@ -46,9 +177,9 @@ body {
   cursor: url('https://bibidaodao.cn/assets/album/cat.ico'), auto;
   // background: linear-gradient(#e0eafc, #cfdef3);
 }
-.layout-default {
-  margin-top: 20px;
-}
+// .layout-default {
+//   margin-top: 20px;
+// }
 
 /* *,
 *:before,

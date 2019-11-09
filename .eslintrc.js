@@ -22,5 +22,8 @@ module.exports = {
     'prettier/prettier': 1,
     'no-control-regex': 0,
     'vue/no-parsing-error': 0
+  },
+  globals: {
+    'wx': 0
   }
 }

@@ -55,6 +55,10 @@ module.exports = {
     color: 'red'
   },
 
+  router: {
+    middleware: 'router-mid'
+  },
+
   /*
    ** Global CSS
    */
@@ -122,7 +126,7 @@ module.exports = {
     postcss: {
       plugins: {
         'postcss-px2rem': {
-          remUnit: 75
+          remUnit: 100
         }
       }
     }
