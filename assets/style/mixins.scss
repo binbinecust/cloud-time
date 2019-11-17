@@ -441,3 +441,11 @@
   background-repeat: no-repeat;
   background-position: top, right top, bottom, left top;
 }
+
+@mixin ellipsis-multi-line($max-line: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $max-line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-wrap: break-word;
+}

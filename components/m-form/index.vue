@@ -35,9 +35,14 @@
     <div class="form-wrapper">
       <div class="form-title">预约体验</div>
       <div class="form-com popup-form">
-        <div>
-          <input id="1" type="radio" value="2" name="少儿美术" />
-          <input id="1" type="radio" value="1" name="成人美术" />
+        <div class="type-input">
+          <span>类型：</span>
+          <RadioGroup v-model="form.type">
+            <Radio label="child">少儿美术</Radio>
+            <Radio label="adult">成人美术</Radio>
+          </RadioGroup>
+          <mt-radio v-model="form.type" title="radio list" :options="options">
+          </mt-radio>
         </div>
         <div class="input-wrapper">
           <i class="iconfont icon">&#xe60c;</i>
@@ -55,7 +60,7 @@
             placeholder="请输入您的联系方式"
           />
         </div>
-        <div class="input-wrapper">
+        <div v-if="form.type === 'child'" class="input-wrapper">
           <i class="iconfont icon">&#xe66e;</i>
           <input
             v-model="form.childName"
@@ -63,21 +68,21 @@
             placeholder="请输入小朋友姓名"
           />
         </div>
-        <div class="input-wrapper">
+        <div v-if="form.type === 'child'" class="input-wrapper">
           <i class="iconfont icon">&#xe730;</i>
           <input
             v-model="form.age"
-            type="text"
+            type="number"
             placeholder="请输入小朋友年龄"
           />
         </div>
-        <div class="input-wrapper">
-          <i class="iconfont icon">&#xe601;</i>
-          <input
-            v-model="form.catalog"
-            type="text"
-            placeholder="请选择感兴趣的科目"
-          />
+        <div class="input-wrapper catalog">
+          <span>类目：</span>
+          <CheckboxGroup v-model="form.catalog">
+            <Checkbox label="shuicai">水彩</Checkbox>
+            <Checkbox label="guohua">国画</Checkbox>
+            <Checkbox label="shuifen">水粉</Checkbox>
+          </CheckboxGroup>
         </div>
 
         <div class="btn-wrapper">
@@ -102,8 +107,22 @@ export default Vue.extend({
         tel: '',
         age: '',
         childName: '',
-        catalog: ''
-      }
+        catalog: ['shuicai']
+      },
+      options: [
+        {
+          label: '少儿美术',
+          value: 'child'
+        },
+        {
+          label: '成人美术',
+          value: 'adult'
+        },
+        {
+          label: '博物馆课程',
+          value: 'museum'
+        }
+      ]
     }
   },
   methods: {
@@ -113,7 +132,7 @@ export default Vue.extend({
 })
 </script>
 <style lang="scss">
-.v-form {
+.form-wrapper {
   .ivu-form-item-label {
     font-size: 36px;
   }
@@ -123,6 +142,12 @@ export default Vue.extend({
   .ivu-input {
     font-size: 32px;
     height: 48px;
+  }
+  .ivu-radio-wrapper {
+    font-size: 30px;
+  }
+  .ivu-checkbox-wrapper {
+    font-size: 30px;
   }
 }
 </style>
@@ -142,7 +167,6 @@ export default Vue.extend({
   width: 640px;
 }
 .form-com {
-  // width: 438px;
   margin: 0 auto;
   text-align: left;
 
@@ -152,6 +176,24 @@ export default Vue.extend({
     position: relative;
   }
 
+  .type-input {
+    margin-bottom: 15px;
+    font-size: 32px;
+    & > span {
+      vertical-align: middle;
+    }
+  }
+
+  .catalog {
+    margin-bottom: 40px;
+    & > span {
+      font-size: 30px;
+    }
+    .ivu-checkbox-group {
+      display: inline-block;
+    }
+  }
+
   input {
     width: 100%;
     height: 90px;
@@ -159,7 +201,6 @@ export default Vue.extend({
     font-size: 16px;
     padding: 30px;
     box-sizing: border-box;
-    // margin-bottom: 30px;
     background: #f5f5f5;
     border: none;
     border-radius: 4px;

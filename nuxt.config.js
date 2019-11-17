@@ -62,12 +62,12 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['iview/dist/styles/iview.css', './assets/theme/index.less'],
+  css: ['iview/dist/styles/iview.css', './assets/theme/index.less', 'mint-ui/lib/style.css'],
 
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/iview', {
+  plugins: ['@/plugins/iview', '@/plugins/mint-ui',{
     src: '~plugins/ga.js',
     ssr: false
   }, '@/plugins/axios'],

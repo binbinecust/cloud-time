@@ -63,15 +63,15 @@
         </div>
       </div>
     </div>
-    <!-- <pre-index v-if="isShow" @hide="hidePreIndex"></pre-index> -->
+    <pre-index v-if="isShow" @hide="hidePreIndex"></pre-index>
   </div>
 </template>
 <script>
-// import PreIndex from '@/components/pre-index.vue'
+import PreIndex from '@/components/pre-index.vue'
 export default {
-  // components: {
-  //   PreIndex
-  // },
+  components: {
+    PreIndex
+  },
   data() {
     return {
       year: new Date().getFullYear(),

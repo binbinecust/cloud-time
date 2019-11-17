@@ -27,7 +27,7 @@
           <span class="iconfont">&#xe600;</span>
           <span>课程简介</span>
         </a>
-        <a @click="changeRoute('teacher-introduction')">
+        <a @click="changeRoute('teacher')">
           <span class="iconfont">&#xe6d6;</span>
           <span>教师介绍</span>
         </a>
