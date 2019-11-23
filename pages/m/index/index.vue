@@ -67,8 +67,9 @@
             </div>
           </div>
           <div class="des">
-            <span class="color-k">主题描述：</span>
-            <span class="des-info"> {{ theme.des }}</span>
+            <span class="des-info"
+              ><span class="color-k">主题描述：</span>{{ theme.des }}</span
+            >
           </div>
         </div>
       </div>
@@ -86,11 +87,12 @@
           v-for="(workRow, indexRow) in indexWorks"
           :key="indexRow"
           class="row"
+          :class="{ 'row-1': indexRow === 0 }"
         >
           <div v-for="(work, index) in workRow" :key="index" class="card work">
             <img :src="work.img" :alt="work.name" />
             <p>{{ work.workName }}</p>
-            <p>
+            <p class="author">
               <span class="color-k">作者：</span
               ><span class="value-author">{{ work.author }}</span
               ><span class="color-k">年龄：</span><span>{{ work.age }}</span>
@@ -107,8 +109,37 @@
           <span class="iconfont icon">&#xe602;</span>
         </div>
       </div>
-      <div class="module-content">
-        <div></div>
+      <div class="module-content teachers">
+        <div v-for="(teacher, index) in teachers" :key="index" class="teacher">
+          <div class="base-info">
+            <div class="avatar left">
+              <img :src="teacher.img" :alt="teacher.name" />
+            </div>
+            <div class="right">
+              <p class="teacher-name">
+                <span class="color-k">姓名：</span>
+                <span>{{ teacher.name }}</span>
+              </p>
+              <p>
+                <span class="color-k">教龄：</span>
+                <span>{{ teacher.teachAge }}年</span>
+              </p>
+              <p>
+                <span class="color-k">毕业美院：</span>
+                <span>{{ teacher.university }}</span>
+              </p>
+              <p>
+                <span class="color-k">教学特点：</span>
+                <span>{{ teacher.specialty }}</span>
+              </p>
+            </div>
+          </div>
+          <div class="des">
+            <span class="des-info"
+              ><span class="color-k">个人简介：</span>{{ teacher.des }}</span
+            >
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -171,7 +202,7 @@ export default Vue.extend({
       box-shadow: 0 0.02rem 0.3rem 0 rgba(0, 0, 0, 0.07);
       padding-bottom: 10px;
       &:not(:last-child) {
-        margin-right: 20px;
+        margin-right: 10px;
       }
       img {
         width: 100%;
@@ -197,48 +228,87 @@ export default Vue.extend({
     &:not(:last-child) {
       @include m-r1bb();
     }
-    .base-info {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
+  }
+}
+
+.base-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  .left {
+    margin-right: 40px;
+    overflow: hidden;
+    img {
+      height: 130px;
+      vertical-align: middle;
     }
-    .left {
-      margin-right: 40px;
-      overflow: hidden;
-      img {
-        height: 130px;
-        vertical-align: middle;
-      }
+  }
+  .right {
+    text-align: left;
+    > p:not(:last-child) {
+      margin-bottom: 10px;
     }
-    .right {
-      > p:not(:last-child) {
-        margin-bottom: 10px;
-      }
-      p:nth-child(1) {
-        font-size: 32px;
-        font-weight: bold;
-      }
-      .icon {
-        font-size: 32px;
-      }
+    p:nth-child(1) {
+      font-size: 32px;
+      font-weight: bold;
     }
-    .des {
-      text-align: left;
-      &-info {
-        display: inline-block;
-        width: calc(100% - 200px);
-        vertical-align: bottom;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
+    .icon {
+      font-size: 32px;
     }
   }
 }
 
+.des {
+  text-align: left;
+  &-info {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+  }
+}
+
 .work {
+  .author {
+    padding: 0 2px;
+  }
   .value-author {
     margin-right: 10px;
+  }
+}
+
+.teachers {
+  padding: 20px;
+  background: #f8f8f8;
+  .teacher {
+    &:first-child {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      @include m-r1bb(#d5d5d5);
+    }
+    .avatar {
+      width: 200px;
+      height: 200px;
+      // border-radius: 50%;
+      padding: 10px;
+      overflow: hidden;
+      box-sizing: border-box;
+      margin-right: 20px;
+      @include m-r1b(#515a6e, 50%);
+      img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+      }
+    }
+    .teacher-name {
+      .color-k {
+        font-size: 24px;
+        font-weight: normal;
+      }
+    }
   }
 }
 
