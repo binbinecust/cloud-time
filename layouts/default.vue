@@ -5,6 +5,7 @@
       <navigation v-if="show && isPC"></navigation>
       <nuxt />
       <footer-com v-if="show && isPC"></footer-com>
+      <m-footer-com v-if="!isPC"></m-footer-com>
     </main>
   </div>
 </template>
@@ -12,12 +13,14 @@
 import navigation from '@/components/navigation'
 import MNav from '@/components/m-navigation/index.vue'
 import footerCom from '@/components/footer.vue'
+import MFooterCom from '@/components/m-footer/index.vue'
 
 export default {
   components: {
     navigation,
     MNav,
-    footerCom
+    footerCom,
+    MFooterCom
   },
   data() {
     return {

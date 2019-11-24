@@ -101,12 +101,12 @@ export default Vue.extend({
 
     fixedBodyPosition(showPopup = true) {
       // const curPage = this.$route.name
-      const classLists = document.querySelector('body').classList
+      const classLists = document.querySelector('main').classList
       if (showPopup) {
         this.pageYOffset =
-          parseInt(document.querySelector('body').style.top) ||
+          parseInt(document.querySelector('main').style.top) ||
           window.pageYOffset
-        document.querySelector('body').style = `top: -${window.pageYOffset}px`
+        document.querySelector('main').style = `top: -${window.pageYOffset}px`
         setTimeout(() => classLists.add('fixed'), 100)
       } else {
         classLists.remove('fixed')
@@ -123,7 +123,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 @import '@/assets/style/mixins.scss';
-body {
+main {
   &.fixed {
     position: fixed;
     left: 0;

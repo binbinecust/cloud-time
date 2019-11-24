@@ -7,6 +7,27 @@
         <mt-swipe-item class="item">3</mt-swipe-item>
       </mt-swipe>
     </div>
+    <div class="hot">
+      <div class="hot-wrapper">
+        <div class="hot-item">
+          <span class="iconfont">&#xe619;</span>
+          <span
+            >双11活动啦，大家快来学习绘画啦。双11活动啦，大家快来学习绘画啦。</span
+          >
+        </div>
+        <div class="hot-item">
+          <span class="iconfont">&#xe619;</span>
+          <span
+            >双11活动啦，大家快来学习绘画啦。双11活动啦，大家快来学习绘画啦。</span
+          >
+        </div>
+      </div>
+    </div>
+    <a class="phone" href="tel:18500945333">
+      <div class="shake">
+        <span class="iconfont">&#xe613;</span>
+      </div>
+    </a>
     <div class="module">
       <div class="module-title">
         <div class="left">课程简介</div>
@@ -110,9 +131,17 @@
         </div>
       </div>
       <div class="module-content teachers">
-        <div v-for="(teacher, index) in teachers" :key="index" class="teacher">
+        <div
+          v-for="(teacher, index) in teachers"
+          :key="index"
+          class="teacher"
+          :class="teacher.enName"
+        >
           <div class="base-info">
-            <div class="avatar left">
+            <div
+              class="avatar left"
+              @touchend="gotoPage('teacher', teacher.enName)"
+            >
               <img :src="teacher.img" :alt="teacher.name" />
             </div>
             <div class="right">
@@ -138,6 +167,29 @@
             <span class="des-info"
               ><span class="color-k">个人简介：</span>{{ teacher.des }}</span
             >
+          </div>
+          <div class="masterpiece cards">
+            <p class="color-k tl">代表作品：</p>
+            <div class="t-works row">
+              <div
+                v-for="(item, index) in teacher.works"
+                :key="index"
+                class="t-work card"
+              >
+                <img
+                  :src="item.img"
+                  :alt="item.name"
+                  @touchend="gotoPage('teacher', teacher.enName)"
+                />
+                <p>{{ item.name }}</p>
+                <p class="size">
+                  <span class="color-k">尺寸：</span>{{ item.size }}
+                </p>
+                <p class="work-des">
+                  <span class="color-k ">作品描述：</span>{{ item.des }}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -166,12 +218,8 @@ export default Vue.extend({
   }
 })
 </script>
-
 <style lang="scss" scoped>
 @import '@/assets/style/mixins.scss';
-.m-index {
-  height: 5000px;
-}
 .swipe {
   height: 498px;
   .item {
@@ -186,6 +234,26 @@ export default Vue.extend({
     }
   }
 }
+
+.hot {
+  text-align: left;
+  font-size: 28px;
+  padding: 5px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  .hot-wrapper {
+    animation: hotMove 6s linear infinite;
+  }
+  .hot-item {
+    width: 936px;
+    display: inline-block;
+  }
+  .iconfont {
+    font-size: 20px;
+    color: #e60000;
+  }
+}
+
 .cards {
   padding: 20px;
   .row {
@@ -219,11 +287,14 @@ export default Vue.extend({
 }
 
 .themes {
-  background: #f8f8f8;
-  padding: 20px;
+  // background: #f8f8f8;
+  // padding: 20px;
   font-size: 24px;
+  .module-content {
+    padding: 20px;
+  }
   .theme {
-    padding: 20px 0 20px 20px;
+    padding: 20px 0;
     border-radius: 4px;
     &:not(:last-child) {
       @include m-r1bb();
@@ -281,7 +352,7 @@ export default Vue.extend({
 
 .teachers {
   padding: 20px;
-  background: #f8f8f8;
+  // background: #f8f8f8;
   .teacher {
     &:first-child {
       padding-bottom: 20px;
@@ -301,6 +372,13 @@ export default Vue.extend({
         width: 180px;
         height: 180px;
         border-radius: 50%;
+        animation: rotateAvatar 10s linear infinite;
+      }
+    }
+
+    &.lutingting {
+      .avatar img {
+        animation-delay: 0.5s;
       }
     }
     .teacher-name {
@@ -309,11 +387,41 @@ export default Vue.extend({
         font-weight: normal;
       }
     }
+    .masterpiece {
+      padding: 0;
+      .tl {
+        text-align: left;
+        margin: 10px 0;
+      }
+      .size {
+        margin-top: 10px;
+        margin-left: 5px;
+        text-align: left;
+      }
+      .t-works {
+        display: flex;
+        justify-content: space-between;
+        .t-work {
+          flex: 1;
+          img {
+            width: 100%;
+          }
+          .work-des {
+            padding: 0 5px;
+            text-align: left;
+            @include ellipsis-multi-line(3);
+          }
+        }
+      }
+    }
   }
 }
 
 .module {
   padding-top: 40px;
+  &:nth-child(odd) {
+    background: #f8f8f8;
+  }
   &-title {
     display: flex;
     align-items: center;
@@ -341,6 +449,24 @@ export default Vue.extend({
         margin-left: -10px;
       }
     }
+  }
+}
+
+@keyframes rotateAvatar {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hotMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-936px);
   }
 }
 </style>

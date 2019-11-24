@@ -130,6 +130,7 @@ export const indexWorks = [
 export const teachers = [
   {
     name: '孟汐',
+    enName: 'mengxi',
     img: require('@/assets/img/teacher1.jpeg'),
     teachAge: 5,
     university: '鲁迅美术学院',
@@ -159,6 +160,7 @@ export const teachers = [
   },
   {
     name: '卢婷婷',
+    enName: 'lutingting',
     teachAge: 5,
     img: require('@/assets/img/lutingting.jpeg'),
     university: '鲁迅美术学院',

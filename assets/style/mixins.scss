@@ -445,7 +445,9 @@
 @mixin ellipsis-multi-line($max-line: 2) {
   display: -webkit-box;
   -webkit-line-clamp: $max-line;
+  /*! autoprefixer: off */
   -webkit-box-orient: vertical;
+  /* autoprefixer: on */
   overflow: hidden;
   word-wrap: break-word;
 }
