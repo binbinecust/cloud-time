@@ -7,4 +7,27 @@ on:
       - v*
 
 jobs:
-  build:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@master
+
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+
+      - name: build
+        run: |
+          npm install
+          npm run build
+
+      - name: deploy
+        uses: jerray/setup-aliyun-cli-action@v1.0.0
+          with:
+            aliyun-cli-version: '3.0.29'
+            mode: AK
+            access-key-id: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+            access-key-secret: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+            region: ${{ secrets.ALIYUN_REGION }}
+        run: aliyun oss cp  ./README.md ~/test/
