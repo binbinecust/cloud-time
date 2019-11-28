@@ -6,6 +6,11 @@
       <nuxt />
       <footer-com v-if="show && isPC"></footer-com>
       <m-footer-com v-if="!isPC"></m-footer-com>
+      <a v-if="!isPC" class="phone" href="tel:18500945333">
+        <div class="shake">
+          <span class="iconfont">&#xe613;</span>
+        </div>
+      </a>
     </main>
   </div>
 </template>
@@ -180,6 +185,10 @@ body {
   cursor: url('https://bibidaodao.cn/assets/album/cat.ico'), auto;
   // background: linear-gradient(#e0eafc, #cfdef3);
 }
+
+main {
+  width: 100%;
+}
 // .layout-default {
 //   margin-top: 20px;
 // }
@@ -219,4 +228,50 @@ body {
   color: #fff;
   background-color: #35495e;
 } */
+
+.phone {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 99999999;
+  background: linear-gradient(#ff4b52, #f7ad9b);
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 100px;
+
+  .iconfont {
+    font-size: 50px;
+    color: white;
+  }
+
+  .shake {
+    animation: shake 4s linear infinite;
+  }
+}
+
+@keyframes shake {
+  0%,
+  80% {
+    transform: rotate(0);
+  }
+
+  85% {
+    transform: rotate(30deg);
+  }
+
+  90% {
+    transform: rotate(-30deg);
+  }
+
+  95% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
 </style>

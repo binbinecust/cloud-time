@@ -24,6 +24,6 @@ module.exports = {
     'vue/no-parsing-error': 0
   },
   globals: {
-    'wx': 0
+    wx: 0
   }
 }

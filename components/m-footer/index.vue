@@ -10,7 +10,7 @@
                 alt=""
               /> -->
             </div>
-            <span>云时光艺术工作室</span>
+            <span>芸朵时光艺术工作室</span>
           </div>
           <div class="info">
             <div>
@@ -59,7 +59,8 @@
         </div>
       </div>
       <div class="copyright">
-        Copyright © 2019-{{ year }} 云时光艺术工作室 | 京ICP备19016270号-2
+        <div>Copyright © 2019-{{ year }} 芸朵时光艺术工作室</div>
+        <div>京ICP备19016270号-2</div>
       </div>
     </footer>
   </div>
@@ -102,9 +103,13 @@ export default Vue.extend({
         margin-bottom: 20px;
         &-img {
           display: inline-block;
-          width: 179px;
-          height: 40px;
-          background: pink;
+          width: 200px;
+          height: 90px;
+          background: url('../../assets/m-img/logo.png') no-repeat;
+          background-size: 200px auto;
+        }
+        span {
+          vertical-align: 28px;
         }
       }
       .info {
@@ -131,7 +136,7 @@ export default Vue.extend({
         // }
         > div {
           // background: #f5f5f6;
-          padding: 15px 0 15px 15px;
+          // padding: 15px 0 15px 15px;
           // margin-bottom: 15px;
           display: flex;
           align-items: center;
@@ -154,7 +159,8 @@ export default Vue.extend({
               width: 200px;
               height: 200px;
 
-              background: pink;
+              background: url('../../assets/m-img/qrcode.jpg') no-repeat;
+              background-size: cover;
               display: inline-block;
             }
           }

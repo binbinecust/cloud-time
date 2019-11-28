@@ -69,50 +69,12 @@ a {
   color: #999999;
 }
 
-.phone {
-  position: fixed;
-  bottom: 100px;
-  right: 20px;
-  z-index: 99999999;
-  background: linear-gradient(#ff4b52, #f7ad9b);
-  display: inline-block;
-  width: 114px;
-  height: 114px;
-  border-radius: 20px;
-  text-align: center;
-  line-height: 114px;
-
-  .iconfont {
-    font-size: 50px;
-    color: white;
-  }
-
-  .shake {
-
-    animation: shake 4s linear infinite;
-  }
-}
-
-@keyframes shake {
-
-  0%,
-  80% {
+@keyframes rotateAvatar {
+  0% {
     transform: rotate(0);
   }
 
-  85% {
-    transform: rotate(30deg);
-  }
-
-  90% {
-    transform: rotate(-30deg);
-  }
-
-  95% {
-    transform: rotate(30deg);
-  }
-
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }

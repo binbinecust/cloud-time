@@ -23,11 +23,6 @@
         </div>
       </div>
     </div>
-    <a class="phone" href="tel:18500945333">
-      <div class="shake">
-        <span class="iconfont">&#xe613;</span>
-      </div>
-    </a>
     <div class="module">
       <div class="module-title">
         <div class="left">课程简介</div>
@@ -172,8 +167,8 @@
             <p class="color-k tl">代表作品：</p>
             <div class="t-works row">
               <div
-                v-for="(item, index) in teacher.works"
-                :key="index"
+                v-for="(item, subIndex) in teacher.works"
+                :key="subIndex"
                 class="t-work card"
               >
                 <img
@@ -449,15 +444,6 @@ export default Vue.extend({
         margin-left: -10px;
       }
     }
-  }
-}
-
-@keyframes rotateAvatar {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 

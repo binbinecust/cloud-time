@@ -71,11 +71,14 @@ export default Vue.extend({
     changeRoute(path) {
       this.$router.push(path)
       this.visible = false
+      document.querySelector('main').classList.remove('fixed')
     },
     showForm() {
       this.formVisible = true
+
+      this.fixedBodyPosition(true, this.visible)
       this.visible = false
-      this.fixedBodyPosition()
+      // document.querySelector('main').style.top = 0
     },
     toggleModel() {
       this.visible = !this.visible
@@ -99,17 +102,27 @@ export default Vue.extend({
       )
     },
 
-    fixedBodyPosition(showPopup = true) {
+    fixedBodyPosition(showPopup = true, isToggleModel = false) {
       // const curPage = this.$route.name
       const classLists = document.querySelector('main').classList
       if (showPopup) {
-        this.pageYOffset =
+        const pageYOffset =
           parseInt(document.querySelector('main').style.top) ||
           window.pageYOffset
-        document.querySelector('main').style = `top: -${window.pageYOffset}px`
+        console.log({
+          top: parseInt(document.querySelector('main').style.top),
+          winpageYOffset: window.pageYOffset
+        })
+        if (!isToggleModel) {
+          this.pageYOffset = Math.abs(pageYOffset)
+          document.querySelector('main').style = `top: -${window.pageYOffset}px`
+        } else {
+          document.querySelector('main').style = `top: -${this.pageYOffset}px`
+        }
         setTimeout(() => classLists.add('fixed'), 100)
       } else {
         classLists.remove('fixed')
+        document.querySelector('main').style.top = 0
         scrollTo(0, this.pageYOffset)
       }
     },
@@ -123,13 +136,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 @import '@/assets/style/mixins.scss';
-main {
-  &.fixed {
-    position: fixed;
-    left: 0;
-    right: 0;
-  }
-}
 .pop-form {
   z-index: 99999999999;
   display: flex;
@@ -170,12 +176,12 @@ main {
 
     a.logo {
       display: inline-block;
-      width: 179px;
-      height: 36px;
-      background: url('//t.focus-res.cn/fe-node/assets/images/focus-logo1.f86de30b.png')
-        no-repeat;
-      background-size: cover;
+      width: 200px;
+      height: 90px;
+      background: url('../../assets/m-img/logo1.png') no-repeat;
+      background-size: 200px auto;
       cursor: pointer;
+      margin-top: 8px;
     }
 
     // .sale-center {
@@ -263,7 +269,7 @@ main {
       padding: 50px 70px;
       width: 100vw;
       // position: absolute;
-      box-sizing: content-box;
+      box-sizing: border-box;
       height: 0;
       // top: 0;
       font-size: 32px;
@@ -275,7 +281,7 @@ main {
       > a {
         text-align: left;
         display: block;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         color: #333;
 
         &:last-child {
@@ -389,9 +395,9 @@ main {
   }
 
   a.logo {
-    background: url('https://t.focus-res.cn/fe-node/assets/images/recognization.97e32b57.png')
-      no-repeat;
-    background-size: cover;
+    background: url('../../assets/m-img/logo.png') no-repeat;
+    background-size: 200px auto;
+    margin-top: 0px;
   }
 
   .sale-center {
@@ -425,7 +431,7 @@ main {
   }
 
   100% {
-    height: 450px;
+    height: 470px;
   }
 }
 </style>
