@@ -74,7 +74,7 @@
               </p>
               <p>
                 <span class="color-k">时间：</span
-                ><span>{{ theme.startTime }}-{{ theme.endTime }}</span>
+                ><span>{{ theme.startTime }} 至 {{ theme.endTime }}</span>
               </p>
               <p>
                 <span class="color-k">主讲老师：</span

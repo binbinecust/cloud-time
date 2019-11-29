@@ -2,6 +2,7 @@ export const themes = [
   {
     name: '大美亚细亚',
     id: 'asian',
+    position: '国家博物馆',
     startTime: '2019-09-20',
     endTime: '2019-11-10',
     teachers: ['孟老师'],
@@ -10,15 +11,17 @@ export const themes = [
     headImg:
       'http://cdn.njzredu.com/children-art/moblie/image/load/art/course/caihuaban.png',
     imgs: [
-      'http://cdn.njzredu.com/children-art/moblie/image/child_pic_07.png',
-      'http://cdn.njzredu.com/children-art/moblie/image/child_pic_08.png',
-      'http://cdn.njzredu.com/children-art/moblie/image/child_pic_06.png',
-      'http://cdn.njzredu.com/children-art/moblie/image/child_pic_05.png'
+      'https://www.cloud-time.net/assets/cloud-time/cafa1-small.jpeg',
+      'https://www.cloud-time.net/assets/cloud-time/cafa1-small.jpeg',
+      'https://www.cloud-time.net/assets/cloud-time/cafa1-small.jpeg',
+      'https://www.cloud-time.net/assets/cloud-time/cafa1-small.jpeg',
+      'https://www.cloud-time.net/assets/cloud-time/cafa1-small.jpeg'
     ]
   },
   {
     name: '大美亚细亚',
     id: 'asian',
+    position: '国家博物馆',
     startTime: '2019-09-20',
     endTime: '2019-11-10',
     teachers: ['孟老师'],
@@ -27,10 +30,11 @@ export const themes = [
     headImg:
       'http://cdn.njzredu.com/children-art/moblie/image/load/art/course/caihuaban.png',
     imgs: [
-      'http://cdn.njzredu.com/children-art/moblie/image/child_pic_07.png',
-      'http://cdn.njzredu.com/children-art/moblie/image/child_pic_08.png',
-      'http://cdn.njzredu.com/children-art/moblie/image/child_pic_06.png',
-      'http://cdn.njzredu.com/children-art/moblie/image/child_pic_05.png'
+      'https://www.cloud-time.net/assets/cloud-time/cafa1-small.jpeg',
+      'https://www.cloud-time.net/assets/cloud-time/cafa1-small.jpeg',
+      'https://www.cloud-time.net/assets/cloud-time/cafa1-small.jpeg',
+      'https://www.cloud-time.net/assets/cloud-time/cafa1-small.jpeg',
+      'https://www.cloud-time.net/assets/cloud-time/cafa1-small.jpeg'
     ]
   }
 ]
@@ -176,9 +180,25 @@ export const teachers = [
       {
         name: '证书3',
         img: 'https://www.cloud-time.net/_nuxt/img/a2500a8.jpeg'
+      },
+      {
+        name: '证书3',
+        img: 'https://www.cloud-time.net/_nuxt/img/a2500a8.jpeg'
+      },
+      {
+        name: '证书3',
+        img: 'https://www.cloud-time.net/_nuxt/img/a2500a8.jpeg'
       }
     ],
-    teachViews: ['https://www.cloud-time.net/assets/cloud-time/steam5.jpg']
+    teachViews: [
+      'https://www.cloud-time.net/assets/cloud-time/steam5.jpg',
+      'https://www.cloud-time.net/assets/cloud-time/steam5.jpg',
+      'https://www.cloud-time.net/assets/cloud-time/steam5.jpg',
+      'https://www.cloud-time.net/assets/cloud-time/steam5.jpg',
+      'https://www.cloud-time.net/assets/cloud-time/steam5.jpg',
+      'https://www.cloud-time.net/assets/cloud-time/steam5.jpg',
+      'https://www.cloud-time.net/assets/cloud-time/steam5.jpg'
+    ]
   },
   {
     name: '卢婷婷',
@@ -222,6 +242,100 @@ export const teachers = [
       '2019年参加“人文清华”讲坛—常莎娜《永远的敦煌》',
       '2019年带领学员参加国内最权威的平台-中国美术家协会举办的首届全国少儿美术作品展，学员徐翎腾的作品《我爱爬长城》入选，作品于6月15日在北京时代美术馆展出。',
       '2019年受邀参加世界华人美术教育学会主席—陈怡倩博士的STAEAM课程研修并取得结业证书，所设计的《会画画可以成为什么样的人》STEAM系列课受陈怡倩博士的肯定，并把其中两位学员的作品作为示范选入她在泰国诗大艺术学院演讲的课例中。'
+    ],
+    awards: [
+      {
+        name: '证书1',
+        img: 'https://www.cloud-time.net/_nuxt/img/a2500a8.jpeg'
+      },
+      {
+        name: '证书2',
+        img: 'https://www.cloud-time.net/_nuxt/img/a2500a8.jpeg'
+      },
+      {
+        name: '证书3',
+        img: 'https://www.cloud-time.net/_nuxt/img/a2500a8.jpeg'
+      },
+      {
+        name: '证书3',
+        img: 'https://www.cloud-time.net/_nuxt/img/a2500a8.jpeg'
+      },
+      {
+        name: '证书3',
+        img: 'https://www.cloud-time.net/_nuxt/img/a2500a8.jpeg'
+      }
+    ],
+    teachViews: [
+      'https://www.cloud-time.net/assets/cloud-time/steam5.jpg',
+      'https://www.cloud-time.net/assets/cloud-time/steam5.jpg',
+      'https://www.cloud-time.net/assets/cloud-time/steam5.jpg',
+      'https://www.cloud-time.net/assets/cloud-time/steam5.jpg',
+      'https://www.cloud-time.net/assets/cloud-time/steam5.jpg',
+      'https://www.cloud-time.net/assets/cloud-time/steam5.jpg',
+      'https://www.cloud-time.net/assets/cloud-time/steam5.jpg'
     ]
+  }
+]
+
+export const works = [
+  {
+    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
+    workName: '蝴蝶飞舞',
+    age: 12,
+    author: '方彬彬'
+  },
+  {
+    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
+    workName: '蝴蝶飞舞',
+    age: 12,
+    author: '方彬彬'
+  },
+  {
+    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
+    workName: '蝴蝶飞舞',
+    age: 12,
+    author: '方彬彬'
+  },
+  {
+    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
+    workName: '蝴蝶飞舞',
+    age: 12,
+    author: '方彬彬'
+  },
+  {
+    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
+    workName: '蝴蝶飞舞',
+    age: 12,
+    author: '方彬彬'
+  },
+  {
+    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
+    workName: '蝴蝶飞舞',
+    age: 12,
+    author: '方彬彬'
+  },
+  {
+    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
+    workName: '蝴蝶飞舞',
+    age: 12,
+    author: '方彬彬'
+  },
+  {
+    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
+    workName: '蝴蝶飞舞',
+    age: 12,
+    author: '方彬彬'
+  },
+  {
+    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
+    workName: '蝴蝶飞舞',
+    age: 12,
+    author: '方彬彬'
+  },
+  {
+    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
+    workName: '蝴蝶飞舞',
+    age: 12,
+    author: '方彬彬'
   }
 ]

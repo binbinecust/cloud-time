@@ -92,18 +92,18 @@ export default Vue.extend({
     color: white;
   }
   .modules {
-    padding: 0 20px;
+    padding: 0 20px 20px;
     font-size: 28px;
     .module-content {
-      margin-top: 20px;
+      margin-top: 10px;
       text-indent: 2em;
-      line-height: 62px;
+      line-height: 50px;
     }
   }
 }
 
 .module {
-  padding-top: 40px;
+  padding-top: 20px;
 
   &-title {
     display: flex;

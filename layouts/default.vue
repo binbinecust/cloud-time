@@ -179,6 +179,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   text-align: center;
+  scroll-behavior: smooth;
 }
 body {
   // margin-top: 20px;

@@ -120,10 +120,16 @@ export default Vue.extend({
           document.querySelector('main').style = `top: -${this.pageYOffset}px`
         }
         setTimeout(() => classLists.add('fixed'), 100)
+        document.querySelector('html').style.scrollBehavior = 'auto'
       } else {
         classLists.remove('fixed')
         document.querySelector('main').style.top = 0
         scrollTo(0, this.pageYOffset)
+        setTimeout(
+          () =>
+            (document.querySelector('html').style.scrollBehavior = 'smooth'),
+          0
+        )
       }
     },
     closeForm() {
