@@ -46,21 +46,84 @@ export const courses = [
       name: '创意美术',
       age: [2.5, 10],
       headImg: 'http://cdn.njzredu.com/children-art/moblie/image/shi_01.png',
-      imgs: []
+      imgs: [],
+      stages: [
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。',
+          img:
+            'http://cdn.njzredu.com/children-art/moblie/image/load/art/course/caihuaban.png'
+        },
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。',
+          img:
+            'http://cdn.njzredu.com/children-art/moblie/image/load/art/course/caihuaban.png'
+        },
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。',
+          img:
+            'http://cdn.njzredu.com/children-art/moblie/image/load/art/course/caihuaban.png'
+        }
+      ],
+      introduction:
+        '加强学生有关方面的 较为 严格的思维训练， 了解素描造型基础，和写实色彩的基础原理和表现方法。让学生能够拥有写实性的描绘现实生活中的事物的能力，为下一步进入素描专业学习奠定基础。学习主要分为四个阶段：视觉的认知、写实与想象、艺术形式的借鉴 、艺术再创造，使学生的作画表现思维方式从儿童画的思维阶段顺利的进入到写实绘画专业学习的思维阶段。'
     },
     {
       id: 'sumiao',
       name: '趣味素描',
       age: [9, 13],
       headImg: 'http://cdn.njzredu.com/children-art/moblie/image/shi_01.png',
-      imgs: []
+      imgs: [],
+      stages: [
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。'
+        },
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。'
+        },
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。'
+        }
+      ],
+      introduction:
+        '加强学生有关方面的 较为 严格的思维训练， 了解素描造型基础，和写实色彩的基础原理和表现方法。让学生能够拥有写实性的描绘现实生活中的事物的能力，为下一步进入素描专业学习奠定基础。学习主要分为四个阶段：视觉的认知、写实与想象、艺术形式的借鉴 、艺术再创造，使学生的作画表现思维方式从儿童画的思维阶段顺利的进入到写实绘画专业学习的思维阶段。'
     },
     {
       id: 'dashi',
       name: '少年大师班',
       age: [9, 13],
       headImg: 'http://cdn.njzredu.com/children-art/moblie/image/shi_01.png',
-      imgs: []
+      imgs: [],
+      stages: [
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。'
+        },
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。'
+        },
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。'
+        }
+      ],
+      introduction:
+        '加强学生有关方面的 较为 严格的思维训练， 了解素描造型基础，和写实色彩的基础原理和表现方法。让学生能够拥有写实性的描绘现实生活中的事物的能力，为下一步进入素描专业学习奠定基础。学习主要分为四个阶段：视觉的认知、写实与想象、艺术形式的借鉴 、艺术再创造，使学生的作画表现思维方式从儿童画的思维阶段顺利的进入到写实绘画专业学习的思维阶段。'
     }
   ],
   [
@@ -69,21 +132,81 @@ export const courses = [
       name: '少儿国画',
       age: [5, 15],
       headImg: 'http://cdn.njzredu.com/children-art/moblie/image/shi_01.png',
-      imgs: []
+      imgs: [],
+      stages: [
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。',
+          img: 'http://cdn.njzredu.com/children-art/moblie/image/shi_01.png'
+        },
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。',
+          img: 'http://cdn.njzredu.com/children-art/moblie/image/shi_02.png'
+        },
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。',
+          img: 'http://cdn.njzredu.com/children-art/moblie/image/shi_02.png'
+        }
+      ],
+      introduction:
+        '加强学生有关方面的 较为 严格的思维训练， 了解素描造型基础，和写实色彩的基础原理和表现方法。让学生能够拥有写实性的描绘现实生活中的事物的能力，为下一步进入素描专业学习奠定基础。学习主要分为四个阶段：视觉的认知、写实与想象、艺术形式的借鉴 、艺术再创造，使学生的作画表现思维方式从儿童画的思维阶段顺利的进入到写实绘画专业学习的思维阶段。'
     },
     {
       id: 'chengren1',
       name: '成人美术',
       age: [15, 60],
       headImg: 'http://cdn.njzredu.com/children-art/moblie/image/shi_01.png',
-      imgs: []
+      imgs: [],
+      stages: [
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。'
+        },
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。'
+        },
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。'
+        }
+      ],
+      introduction:
+        '加强学生有关方面的 较为 严格的思维训练， 了解素描造型基础，和写实色彩的基础原理和表现方法。让学生能够拥有写实性的描绘现实生活中的事物的能力，为下一步进入素描专业学习奠定基础。学习主要分为四个阶段：视觉的认知、写实与想象、艺术形式的借鉴 、艺术再创造，使学生的作画表现思维方式从儿童画的思维阶段顺利的进入到写实绘画专业学习的思维阶段。'
     },
     {
       id: 'chengren2',
       name: '成人国画',
       age: [15, 60],
       headImg: 'http://cdn.njzredu.com/children-art/moblie/image/shi_01.png',
-      imgs: []
+      imgs: [],
+      stages: [
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。'
+        },
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。'
+        },
+        {
+          name: '视觉认知',
+          des:
+            '培养孩子的独立创作能力、艺术兴趣和志向，增强绘画表现手法同时全面提高艺术修养。主要学习色彩平面构成、重彩画、水粉油画板。'
+        }
+      ],
+      introduction:
+        '加强学生有关方面的 较为 严格的思维训练， 了解素描造型基础，和写实色彩的基础原理和表现方法。让学生能够拥有写实性的描绘现实生活中的事物的能力，为下一步进入素描专业学习奠定基础。学习主要分为四个阶段：视觉的认知、写实与想象、艺术形式的借鉴 、艺术再创造，使学生的作画表现思维方式从儿童画的思维阶段顺利的进入到写实绘画专业学习的思维阶段。'
     }
   ]
 ]
@@ -94,19 +217,22 @@ export const indexWorks = [
       img: 'https://www.cloud-time.net/assets/cloud-time/caiqian2-small.jpeg',
       workName: '大鱼海棠',
       age: '12',
-      author: '李**'
+      author: '李小黑',
+      catalog: '水彩'
     },
     {
       img: 'https://www.cloud-time.net/assets/cloud-time/caiqian2-small.jpeg',
       workName: '大鱼海棠',
       age: '12',
-      author: '李**'
+      author: '李小黑',
+      catalog: '水彩'
     },
     {
       img: 'https://www.cloud-time.net/assets/cloud-time/caiqian2-small.jpeg',
       workName: '大鱼海棠',
       age: '12',
-      author: '李**'
+      author: '李小黑',
+      catalog: '水彩'
     }
   ],
   [
@@ -114,19 +240,22 @@ export const indexWorks = [
       img: 'https://www.cloud-time.net/assets/cloud-time/caiqian2-small.jpeg',
       workName: '大鱼海棠',
       age: '12',
-      author: '李**'
+      author: '李小黑',
+      catalog: '水彩'
     },
     {
       img: 'https://www.cloud-time.net/assets/cloud-time/caiqian2-small.jpeg',
       workName: '大鱼海棠',
       age: '12',
-      author: '李**'
+      author: '李小黑',
+      catalog: '水彩'
     },
     {
       img: 'https://www.cloud-time.net/assets/cloud-time/caiqian2-small.jpeg',
       workName: '大鱼海棠',
       age: '12',
-      author: '李**'
+      author: '李小黑',
+      catalog: '水彩'
     }
   ]
 ]
@@ -279,63 +408,195 @@ export const teachers = [
 
 export const works = [
   {
-    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
-    workName: '蝴蝶飞舞',
-    age: 12,
-    author: '方彬彬'
+    catalogEn: 'caiqian',
+    catalogCh: '彩铅',
+    catalogWorks: [
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/72c/fox-1522156.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/647/snowy-mountain-1378865.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/5c6/sunset-jungle-1383333.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/815/xmas-bunny-1313404.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/0d6/blue-flowers-with-macro-4-1400913.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/bf2/fields-1-1370990.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/c23/hello-3-1564990.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/a61/vikingland-1316664.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/1f8/delicate-arch-1-1391746.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/d1f/balloon-contest-1417733.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/b2d/kiwi-fruit-macros-1313905.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/321/water-drop-1386547.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/48d/marguerite-1372118.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/a0c/daffodil-1378489.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/4dc/street-1366583.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/03e/wild-flowers-1628445.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/1a7/deserted-station-at-night-1446615.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/d93/gifts-5-1316929.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/478/jack-o-lanterns-1326113.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/ddb/corn-field-2-1368926.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/e2f/hide-and-seek-1436876.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/fde/aliens-1-1373417.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/338/sunset-over-lake-2-1377767.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img:
+          'https://images.freeimages.com/images/small-previews/322/indian-heads-1391201.jpg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      }
+    ]
   },
   {
-    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
-    workName: '蝴蝶飞舞',
-    age: 12,
-    author: '方彬彬'
-  },
-  {
-    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
-    workName: '蝴蝶飞舞',
-    age: 12,
-    author: '方彬彬'
-  },
-  {
-    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
-    workName: '蝴蝶飞舞',
-    age: 12,
-    author: '方彬彬'
-  },
-  {
-    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
-    workName: '蝴蝶飞舞',
-    age: 12,
-    author: '方彬彬'
-  },
-  {
-    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
-    workName: '蝴蝶飞舞',
-    age: 12,
-    author: '方彬彬'
-  },
-  {
-    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
-    workName: '蝴蝶飞舞',
-    age: 12,
-    author: '方彬彬'
-  },
-  {
-    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
-    workName: '蝴蝶飞舞',
-    age: 12,
-    author: '方彬彬'
-  },
-  {
-    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
-    workName: '蝴蝶飞舞',
-    age: 12,
-    author: '方彬彬'
-  },
-  {
-    img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
-    workName: '蝴蝶飞舞',
-    age: 12,
-    author: '方彬彬'
+    catalog: 'shuifen',
+    catalogCh: '水粉',
+    catalogWorks: [
+      {
+        img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      },
+      {
+        img: 'https://www.cloud-time.net/assets/cloud-time/caiqian3-small.jpeg',
+        workName: '蝴蝶飞舞',
+        age: 12,
+        author: '方彬彬'
+      }
+    ]
   }
 ]

@@ -42,7 +42,7 @@
       </div>
     </div>
     <div v-if="formVisible" class="pop-form">
-      <MForm></MForm>
+      <MForm @hideForm="closeForm"></MForm>
       <div class="iconfont close" @click="closeForm">&#xe63d;</div>
     </div>
   </div>

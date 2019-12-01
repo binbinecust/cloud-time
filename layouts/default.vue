@@ -234,7 +234,7 @@ main {
   position: fixed;
   bottom: 100px;
   right: 20px;
-  z-index: 99999999;
+  z-index: 99999;
   background: linear-gradient(#ff4b52, #f7ad9b);
   display: inline-block;
   width: 100px;

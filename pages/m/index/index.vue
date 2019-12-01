@@ -110,8 +110,12 @@
             <p>{{ work.workName }}</p>
             <p class="author">
               <span class="color-k">作者：</span
-              ><span class="value-author">{{ work.author }}</span
-              ><span class="color-k">年龄：</span><span>{{ work.age }}</span>
+              ><span class="value-author"
+                >{{ work.author }} {{ work.age }}岁</span
+              >
+            </p>
+            <p>
+              <span class="color-k">类型：</span><span>{{ work.catalog }}</span>
             </p>
           </div>
         </div>

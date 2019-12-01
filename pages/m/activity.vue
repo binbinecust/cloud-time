@@ -92,7 +92,7 @@ export default Vue.extend({
       &::before {
         position: absolute;
         content: '';
-        top: 18px;
+        top: 10px;
         height: 30px;
         width: 0px;
         left: 20px;
