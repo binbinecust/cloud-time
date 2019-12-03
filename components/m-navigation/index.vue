@@ -3,7 +3,7 @@
     <div class="nav-bar">
       <!-- <a href="https://m.focus.cn/bj" class="logo"></a> -->
       <a class="logo" @click="changeRoute('index')"> </a>
-      <div class="right">
+      <!-- <div class="right">
         <div
           class="experience"
           :class="visible ? 'close' : ''"
@@ -14,7 +14,7 @@
         <div class="iconfont" @click="toggleModel">
           {{ visible ? '&#xe6f0;' : '&#xe6fd;' }}
         </div>
-      </div>
+      </div> -->
     </div>
     <div v-if="visible" class="model-wrapper">
       <div class="mask" @click="hideModel"></div>

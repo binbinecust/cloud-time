@@ -26,7 +26,7 @@
     <div class="module">
       <div class="module-title">
         <div class="left">课程简介</div>
-        <div class="right" @touchend="gotoPage('course')">
+        <div class="right" @click="gotoPage('course')">
           <span>查看更多</span>
           <span class="iconfont icon">&#xe602;</span>
         </div>
@@ -42,7 +42,7 @@
             v-for="course in courseRow"
             :key="course.id"
             class="card"
-            @touchend="gotoPage('course', course.id)"
+            @click="gotoPage('course', course.id)"
           >
             <img :src="course.headImg" alt="" />
             <p>{{ course.name }}</p>
@@ -58,7 +58,7 @@
     <div class="module themes">
       <div class="module-title">
         <div class="left">主题活动</div>
-        <div class="right" @touchend="gotoPage('activity')">
+        <div class="right" @click="gotoPage('activity')">
           <span>查看更多</span>
           <span class="iconfont icon">&#xe602;</span>
         </div>
@@ -68,7 +68,7 @@
           <div class="base-info">
             <div class="left"><img :src="theme.headImg" alt="" /></div>
             <div class="right">
-              <p @touchend="gotoPage('activity', theme.id)">
+              <p @click="gotoPage('activity', theme.id)">
                 <span>{{ theme.name }}</span
                 ><span class="iconfont icon">&#xe602;</span>
               </p>
@@ -93,7 +93,7 @@
     <div class="module">
       <div class="module-title">
         <div class="left">学生作品</div>
-        <div class="right" @touchend="gotoPage('works')">
+        <div class="right" @click="gotoPage('works')">
           <span>查看更多</span>
           <span class="iconfont icon">&#xe602;</span>
         </div>
@@ -124,7 +124,7 @@
     <div class="module">
       <div class="module-title">
         <div class="left">教师介绍</div>
-        <div class="right" @touchend="gotoPage('teacher')">
+        <div class="right" @click="gotoPage('teacher')">
           <span>查看更多</span>
           <span class="iconfont icon">&#xe602;</span>
         </div>
@@ -139,7 +139,7 @@
           <div class="base-info">
             <div
               class="avatar left"
-              @touchend="gotoPage('teacher', teacher.enName)"
+              @click="gotoPage('teacher', teacher.enName)"
             >
               <img :src="teacher.img" :alt="teacher.name" />
             </div>
@@ -178,7 +178,7 @@
                 <img
                   :src="item.img"
                   :alt="item.name"
-                  @touchend="gotoPage('teacher', teacher.enName)"
+                  @click="gotoPage('teacher', teacher.enName)"
                 />
                 <p>{{ item.name }}</p>
                 <p class="size">

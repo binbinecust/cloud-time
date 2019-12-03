@@ -6,13 +6,15 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: '云时光艺术工作室',
-    meta: [{
+    title: '芸朵时光艺术工作室',
+    meta: [
+      {
         charset: 'utf-8'
       },
       {
         name: 'viewport',
-        content: 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0'
+        content:
+          'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0'
       },
       {
         hid: 'description',
@@ -28,7 +30,8 @@ module.exports = {
         content: '方彬彬,binbinecust@163.com'
       }
     ],
-    link: [{
+    link: [
+      {
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico'
@@ -38,14 +41,14 @@ module.exports = {
         type: 'text/css',
         rel: 'stylesheet'
       }
-    ],
-    script: [{
-      src: 'https://cdn.jsdelivr.net/npm/lib-flexible@0.3.2/flexible.min.js',
-      type: 'text/javascript',
-      charset: 'utf-8',
-      defer: 'defer'
-    }],
-    __dangerouslyDisableSanitizers: ['script']
+    ]
+    // script: [{
+    //   src: 'https://cdn.jsdelivr.net/npm/lib-flexible@0.3.2/flexible.min.js',
+    //   type: 'text/javascript',
+    //   charset: 'utf-8',
+    //   defer: 'defer'
+    // }],
+    // __dangerouslyDisableSanitizers: ['script']
   },
 
   /*
@@ -62,15 +65,24 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['iview/dist/styles/iview.css', './assets/theme/index.less', 'mint-ui/lib/style.css'],
+  css: [
+    'iview/dist/styles/iview.css',
+    './assets/theme/index.less',
+    'mint-ui/lib/style.css'
+  ],
 
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/iview', '@/plugins/mint-ui',{
-    src: '~plugins/ga.js',
-    ssr: false
-  }, '@/plugins/axios'],
+  plugins: [
+    '@/plugins/iview',
+    '@/plugins/mint-ui',
+    {
+      src: '~plugins/ga.js',
+      ssr: false
+    },
+    '@/plugins/axios'
+  ],
 
   /*
    ** Nuxt.js modules
@@ -106,19 +118,22 @@ module.exports = {
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/,
-          options: {
-            fix: true
+        config.module.rules.push(
+          {
+            enforce: 'pre',
+            test: /\.(js|vue)$/,
+            loader: 'eslint-loader',
+            exclude: /(node_modules)/,
+            options: {
+              fix: true
+            }
+          },
+          {
+            test: /\.ico$/,
+            loader: 'uri-loader',
+            exclude: /(node_modules)/
           }
-        }, {
-          test: /\.ico$/,
-          loader: 'uri-loader',
-          exclude: /(node_modules)/
-        })
+        )
         console.log(config.output.publicPath, 'config.output.publicPath')
         // config.output.publicPath = ''
       }

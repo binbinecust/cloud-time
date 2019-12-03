@@ -91,7 +91,7 @@ export default {
                   'onMenuShareQZone'
                 ]
                 const d = {
-                  appId: 1232312312,
+                  appId: 'gh_53042d1729ae',
                   timestamp: +new Date(),
                   nonceStr: '31231231',
                   signature: 34924234
@@ -154,8 +154,8 @@ export default {
       }
 
       WxShare.init({
-        title: '云朵时光艺术工作室',
-        desc: '云朵时光是一个牛逼到爆裂的公司',
+        title: '芸朵时光艺术工作室',
+        desc: '芸朵时光是一个牛逼到爆裂的公司',
         pic:
           'https://t-img.51f.com/sh120x120sh/xf/xw/81f9d500-d71c-4d3e-97fe-077c0e140464.JPEG',
         url: window.location.href.split('#')[0]
